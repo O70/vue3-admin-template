@@ -29,7 +29,7 @@ const routes = [
         meta: { hidden: true },
         children: [
             {
-                path: '',
+                path: ':title?',
                 component: () => import('@/views/base/error.vue'),
                 meta: { title: 'Error' }
             }
