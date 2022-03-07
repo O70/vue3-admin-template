@@ -2,6 +2,7 @@ import router from '.';
 import store from '@/store';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
+import { resolve } from 'path-browserify';
 import { ElMessage } from 'element-plus';
 import { pageTitle, Cookie } from '@/utils';
 
@@ -19,11 +20,12 @@ router.beforeEach(async(to, from, next) => {
     NProgress.start();
 
     const { path, meta } = to;
+    const resolvePath = resolve(path);
 
     document.title = pageTitle(meta?.title);
 
     if (Cookie.getToken()) {
-        if (path === '/signin') {
+        if (resolvePath === '/signin') {
             next('/');
         } else {
             const userinfo = store.getters.info;
@@ -40,12 +42,12 @@ router.beforeEach(async(to, from, next) => {
                         message: error ?? 'Verification failed, please Login again.',
                         type: 'error'
                     });
-                    next(toLogin(path));
+                    next(toLogin(resolvePath));
                 }
             }
         }
     } else {
-        next(PERMITS.includes(path) ? undefined : toLogin(path));
+        next(PERMITS.includes(resolvePath) ? undefined : toLogin(resolvePath));
     }
 });
 
