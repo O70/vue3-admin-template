@@ -22,7 +22,7 @@ instance.interceptors.request.use(
 );
 
 instance.interceptors.response.use(
-    response => response,
+    response => response.data,
     error => {
         console.error('[TODO]', 'Response:', error);
         return Promise.reject(error);
