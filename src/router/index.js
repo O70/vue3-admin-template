@@ -46,6 +46,12 @@ const routes = [
                 meta: { title: 'About' }
             }
         ]
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFoundRouter',
+        redirect: '/error',
+        meta: { hidden: true }
     }
 ];
 
