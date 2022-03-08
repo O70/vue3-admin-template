@@ -14,3 +14,11 @@
 - [ ] `.env`(Page title)
 - [ ] Page style
 - [ ] Reset router
+
+### Functions
+
+- [ ] Dict
+- [ ] Menu
+- [ ] Role
+- [ ] User
+- [ ] GrantedAuthority

@@ -28,7 +28,7 @@ export default [
             {
                 path: 'dict',
                 name: 'DictRouter',
-                component: () => import('@/views/system/dict.vue'),
+                component: () => import('@/views/system/dict/index.vue'),
                 meta: { title: '字典管理' }
             },
             {
