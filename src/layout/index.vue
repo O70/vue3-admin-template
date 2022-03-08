@@ -1,7 +1,9 @@
 <script setup>
+import { reactive } from 'vue';
 import { Navbar, Sidebar, AppMain } from './components';
 
-const scrollHeight = document.body.clientHeight - 60;
+const scrollbar = reactive({ height: 0 });
+const handleResize = height => (scrollbar.height = height - 60);
 </script>
 
 <template>
@@ -14,7 +16,7 @@ const scrollHeight = document.body.clientHeight - 60;
                 <Navbar />
             </el-header>
             <el-main>
-                <el-scrollbar :height="scrollHeight">
+                <el-scrollbar v-resize="handleResize" :height="scrollbar.height">
                     <div class="scroll-content">
                         <AppMain />
                     </div>
