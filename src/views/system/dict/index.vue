@@ -1,6 +1,6 @@
 <script setup>
 import DictTree from './tree.vue';
-import DictForm from './form.vue';
+import DictEdit from './edit.vue';
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import DictForm from './form.vue';
             <DictTree />
         </el-col>
         <el-col :span="18">
-            <DictForm />
+            <DictEdit />
         </el-col>
     </el-row>
 </template>

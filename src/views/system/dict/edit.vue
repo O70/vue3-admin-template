@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, reactive } from 'vue';
+import { Dict } from '@/api/system';
 
 const model = {
     id: null,
@@ -11,7 +12,7 @@ const model = {
     enabled: false,
     remark: null
 };
-const form = ref(Object.assign({}, model));
+const form = reactive(Object.assign({}, model));
 
 const items = [
     [
@@ -28,11 +29,26 @@ const items = [
     ]
 ];
 
+const rules = {
+    name: [
+        { required: true, message: '请输入名称' },
+        { max: 150, message: '内容过长' }
+    ],
+    code: [
+        { required: true, message: '请输入编码' },
+        { max: 150, message: '内容过长' }
+    ],
+    level: [
+        { required: true, message: '请输入层级' },
+        { max: 150, message: '内容过长' }
+    ],
+    remark: { max: 150, message: '内容过长' }
+};
+
 const formRef = ref();
 
 function handleSave() {
-    console.log(formRef.value.validate);
-    console.log('Save:', JSON.parse(JSON.stringify(form.value)));
+    formRef.value.validate(valid => valid && Dict.save(form));
 }
 </script>
 
@@ -40,6 +56,7 @@ function handleSave() {
     <el-form
         ref="formRef"
         :model="form"
+        :rules="rules"
         :label-width="140"
         label-suffix=":"
     >
@@ -62,6 +79,7 @@ function handleSave() {
                         v-else
                         v-model.trim="form[col.prop]"
                         :disabled="col.disabled"
+                        clearable
                     />
                 </el-form-item>
             </el-col>

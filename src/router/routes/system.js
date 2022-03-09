@@ -20,16 +20,16 @@ export default [
                 meta: { title: '机构管理' }
             },
             {
-                path: 'menu',
-                name: 'MenuRouter',
-                component: () => import('@/views/system/menu.vue'),
-                meta: { title: '菜单管理' }
-            },
-            {
                 path: 'dict',
                 name: 'DictRouter',
                 component: () => import('@/views/system/dict/index.vue'),
                 meta: { title: '字典管理' }
+            },
+            {
+                path: 'menu',
+                name: 'MenuRouter',
+                component: () => import('@/views/system/menu.vue'),
+                meta: { title: '菜单管理' }
             },
             {
                 path: 'role',
