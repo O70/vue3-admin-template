@@ -19,6 +19,7 @@ module.exports = {
         'vue/max-attributes-per-line': ['error', {
             'singleline': 6
         }],
+        'vue/require-explicit-emits': ['error'],
         'accessor-pairs': 2,
         'arrow-spacing': [2, {
             'before': true,

@@ -2,20 +2,18 @@
 import { reactive } from 'vue';
 import { Dict } from '@/api/system';
 
-const collect = reactive({ data: [] });
-Dict.tree().then(({ data: [data] }) => (collect.data = [data]));
+const emit = defineEmits(['update:modelValue']);
 
-function handleNodeClick(data) {
-    console.table(data)
-}
+const state = reactive({ data: [] });
+Dict.tree().then(({ data }) => (state.data = data));
 </script>
 
 <template>
     <el-tree
-        :data="collect.data"
+        :data="state.data"
         :props="{ label: 'name' }"
         node-key="id"
         default-expand-all
-        @node-click="handleNodeClick"
+        @node-click="emit('update:modelValue', $event)"
     />
 </template>

@@ -1,18 +1,47 @@
 <script setup>
-import { ref, reactive } from 'vue';
+import { ref, reactive, watch } from 'vue';
 import { Dict } from '@/api/system';
+
+const props = defineProps({
+    entity: {
+        type: Object,
+        default: null
+    }
+});
 
 const model = {
     id: null,
     name: null,
     code: null,
     parent: null,
+    parentId: null,
     level: null,
     value: null,
     enabled: false,
     remark: null
 };
 const form = reactive(Object.assign({}, model));
+
+watch(() => props.entity, ({
+    id,
+    name,
+    code,
+    parent,
+    level,
+    value,
+    enabled,
+    remark
+}) => Object.assign(form, {
+    id,
+    name,
+    code,
+    parent: parent?.name ?? null,
+    parentId: parent?.id ?? null,
+    level,
+    value,
+    enabled,
+    remark
+}));
 
 const items = [
     [
@@ -49,9 +78,8 @@ const formRef = ref();
 
 function handleSave() {
     formRef.value.validate(valid => valid && (() => {
-        const data = Object.assign({}, form, {
-            // parent: { id: 'f1906759-58cb-4590-8498-f6d84888e140' }
-        });
+        const { parentId: id, ...other } = form;
+        const data = Object.assign(other, id ? { parent: { id }} : null);
         console.table(data);
         Dict.save(data).then(data => console.log('Saved:', data));
     })());
