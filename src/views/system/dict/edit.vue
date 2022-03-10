@@ -50,10 +50,10 @@ const formRef = ref();
 function handleSave() {
     formRef.value.validate(valid => valid && (() => {
         const data = Object.assign({}, form, {
-            parent: { id: 'f1906759-58cb-4590-8498-f6d84888e140' }
+            // parent: { id: 'f1906759-58cb-4590-8498-f6d84888e140' }
         });
         console.table(data);
-        Dict.save(data);
+        Dict.save(data).then(data => console.log('Saved:', data));
     })());
 }
 </script>

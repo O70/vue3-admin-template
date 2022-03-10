@@ -3,8 +3,7 @@ import request from '@/utils/request';
 export function list() {
     return request({
         url: '/api/admin/dict',
-        method: 'GET',
-        params: {}
+        method: 'GET'
     });
 }
 
@@ -15,9 +14,16 @@ export function tree() {
     });
 }
 
-export function one(id) {
+export function one(identifier) {
     return request({
-        url: `/api/admin/dict/${id}`,
+        url: `/api/admin/dict/${identifier}`,
+        method: 'GET'
+    });
+}
+
+export function children(identifier) {
+    return request({
+        url: `/api/admin/dict/${identifier}/children`,
         method: 'GET'
     });
 }
