@@ -5,6 +5,9 @@ module.exports = {
         es6: true,
         'vue/setup-compiler-macros': true
     },
+    parserOptions: {
+        ecmaVersion: 'latest'
+    },
     extends: [
         'plugin:vue/vue3-recommended',
         'eslint:recommended'
