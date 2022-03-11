@@ -1,16 +1,18 @@
 import request from '@/utils/request';
 
-export function list() {
+export function list(params) {
     return request({
         url: '/api/admin/dict',
-        method: 'GET'
+        method: 'GET',
+        params
     });
 }
 
-export function tree() {
+export function tree(params) {
     return request({
         url: '/api/admin/dict/tree',
-        method: 'GET'
+        method: 'GET',
+        params
     });
 }
 
