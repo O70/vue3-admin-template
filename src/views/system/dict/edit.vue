@@ -75,16 +75,14 @@ const rules = {
 };
 
 const formRef = ref();
+const loading = ref(false);
 
-let count = 0;
 function handleSave() {
     formRef.value.validate(valid => valid && (() => {
+        loading.value = true;
         const { parentId: id, ...other } = form;
         const data = Object.assign(other, id ? { parent: { id }} : null);
-        // console.table(data);
-        data.id = 'sd' + 0;
-        // count++;
-        Dict.save(data).then(data => console.log('Saved:', data));
+        Dict.save(data).finally(() => (loading.value = false));
     })());
 }
 </script>
@@ -130,7 +128,7 @@ function handleSave() {
             />
         </el-form-item>
         <el-form-item>
-            <el-button type="primary" @click="handleSave">保存</el-button>
+            <el-button type="primary" :loading="loading" @click="handleSave">保存</el-button>
             <el-button>重置</el-button>
         </el-form-item>
     </el-form>
