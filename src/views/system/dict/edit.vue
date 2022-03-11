@@ -76,11 +76,14 @@ const rules = {
 
 const formRef = ref();
 
+let count = 0;
 function handleSave() {
     formRef.value.validate(valid => valid && (() => {
         const { parentId: id, ...other } = form;
         const data = Object.assign(other, id ? { parent: { id }} : null);
-        console.table(data);
+        // console.table(data);
+        data.id = 'sd' + 0;
+        // count++;
         Dict.save(data).then(data => console.log('Saved:', data));
     })());
 }

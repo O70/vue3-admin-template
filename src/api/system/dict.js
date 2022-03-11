@@ -32,7 +32,10 @@ export function save(data) {
     return request({
         url: '/api/admin/dict',
         method: 'POST',
-        data
+        data,
+        messages: {
+            success: '保存成功'
+        }
     });
 }
 
