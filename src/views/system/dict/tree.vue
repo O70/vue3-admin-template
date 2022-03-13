@@ -10,7 +10,7 @@ import { Dict } from '@/api/system';
 //         // level: '000002',
 //         // parentId: 'd557e48a-d8ba-48df-8b5a-48b5efdc0c20',
 //         parentId: 'd0042ad3-7744-4e4e-8e88-124ba333ac63',
-//         // enabled: false
+//         // enabled: true
 //     }
 // ).then(data => console.log('...', data));
 
