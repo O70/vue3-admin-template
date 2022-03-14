@@ -21,9 +21,3 @@ watch(() => state.checked, value => (state.entity = value));
         </el-col>
     </el-row>
 </template>
-
-<style scoped>
-.el-col:nth-child(1) {
-    border: 1px solid red;
-}
-</style>
