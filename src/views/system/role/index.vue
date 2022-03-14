@@ -1,3 +1,3 @@
 <template>
-    System Role
+    Roles
 </template>

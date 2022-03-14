@@ -34,7 +34,7 @@ export default [
             {
                 path: 'role',
                 name: 'RoleRouter',
-                component: () => import('@/views/system/role.vue'),
+                component: () => import('@/views/system/role/index.vue'),
                 meta: { title: '角色管理' }
             },
             {
