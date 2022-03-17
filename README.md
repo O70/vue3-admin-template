@@ -1,5 +1,10 @@
 # Vue 3 Admin Template
 
+## 命名规范
+
+- 文件名称小写
+- 路由地址小写,不允许出现大写名称
+
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
