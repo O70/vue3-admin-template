@@ -2,7 +2,7 @@ import request from '@/utils/request';
 
 export async function signin(data) {
     return request({
-        url: '/api/admin/auth/login',
+        url: '/api/admin/login',
         method: 'POST',
         data
     });
