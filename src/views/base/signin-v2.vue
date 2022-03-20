@@ -8,16 +8,15 @@ const router = useRouter();
 const route = useRoute();
 const store = useStore();
 
-const form = ref({ username: 'master', password: '111111' });
+const form = reactive({ username: 'master', password: '111111' });
 const loading = ref(false);
-const data = reactive({ form, loading });
 
 function handleLogin() {
-    data.loading = true;
-    store.dispatch('user/signin', data.form)
+    loading.value = true;
+    store.dispatch('user/signin', form)
         .then(() => router.push(route.query.redirect ?? '/'))
         .catch(error => console.error('Signin error:', error))
-        .finally(() => (data.loading = false));
+        .finally(() => (loading.value = false));
 }
 </script>
 
