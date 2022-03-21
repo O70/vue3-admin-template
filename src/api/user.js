@@ -1,10 +1,17 @@
 import request from '@/utils/request';
 
 export async function signin(data) {
+    const data1 = new FormData();
+    data1.append('username', data.username);
+    data1.append('password', data.password);
+    data1.append('password1', data.password);
     return request({
         url: '/api/admin/login',
         method: 'POST',
-        data
+        // headers: {
+        //     'Content-Type': 'application/x-www-form-urlencoded'
+        // },
+        data: data1
     });
 
     // const { username, password } = data;
