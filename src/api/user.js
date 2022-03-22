@@ -8,10 +8,10 @@ export async function signin(data) {
     return request({
         url: '/api/admin/login',
         method: 'POST',
-        // headers: {
-        //     'Content-Type': 'application/x-www-form-urlencoded'
-        // },
-        data: data1
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        data
     });
 
     // const { username, password } = data;
