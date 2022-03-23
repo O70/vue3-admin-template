@@ -8,9 +8,9 @@ export async function signin(data) {
     return request({
         url: '/api/admin/login',
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
+        // headers: {
+        //     'Content-Type': 'application/x-www-form-urlencoded'
+        // },
         data
     });
 
