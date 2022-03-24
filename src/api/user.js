@@ -1,17 +1,14 @@
 import request from '@/utils/request';
+import qs from 'qs';
 
 export async function signin(data) {
-    const data1 = new FormData();
-    data1.append('username', data.username);
-    data1.append('password', data.password);
-    data1.append('password1', data.password);
     return request({
-        url: '/api/admin/login',
+        url: '/api/admin/auth/login',
         method: 'POST',
-        // headers: {
-        //     'Content-Type': 'application/x-www-form-urlencoded'
-        // },
-        data
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        data: qs.stringify(data)
     });
 
     // const { username, password } = data;
