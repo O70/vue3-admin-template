@@ -6,6 +6,16 @@ export async function signin(data) {
         url: '/api/admin/auth/login',
         method: 'POST',
         headers: {
+            'Authorization': 'THRAEX master:master'
+        }
+    });
+}
+
+export async function signinV1(data) {
+    return request({
+        url: '/api/admin/auth/login',
+        method: 'POST',
+        headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
         data: qs.stringify(data)
