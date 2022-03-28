@@ -2,7 +2,7 @@
  * TODO: Opt
  */
 
-import PUBLIC_KEY from '@/assets/pub.pem?raw';
+import PUBLIC_KEY from '@/assets/public.key?raw';
 import JSEncrypt from 'jsencrypt';
 
 const encryptor = new JSEncrypt();

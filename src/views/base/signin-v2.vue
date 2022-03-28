@@ -9,7 +9,7 @@ const router = useRouter();
 const route = useRoute();
 const store = useStore();
 
-const form = reactive({ username: 'master', password: '111111' });
+const form = reactive({ username: 'master', password: 'master' });
 const loading = ref(false);
 
 function handleLogin() {

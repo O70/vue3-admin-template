@@ -1,9 +1,6 @@
 import axios from 'axios';
 import { ElMessage } from 'element-plus';
-// import store from '@/store';
 import { Cookie } from '@/utils';
-
-// const TOKEN_KEY = import.meta.env.VITE_TOKEN_KEY;
 
 const errorMessage = (message, error = message) => {
     console.error('[ERROR]', error);
@@ -17,9 +14,8 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
     config => {
-        // store.getters.token && (config.headers[TOKEN_KEY] = Cookie.getToken());
         const headers = config.headers;
-        !headers.Authorization && (headers.Authorization = Cookie.getToken());
+        !headers.Authorization && (headers.Authorization = Cookie.getToken() || '');
 
         return config;
     },
