@@ -1,12 +1,12 @@
 import request from '@/utils/request';
 import qs from 'qs';
 
-export async function signin(data) {
+export async function signin(Authorization) {
     return request({
         url: '/api/admin/auth/login',
         method: 'POST',
         headers: {
-            'Authorization': 'THRAEX master:master'
+            Authorization
         }
     });
 }

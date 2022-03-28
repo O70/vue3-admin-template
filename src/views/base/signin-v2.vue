@@ -3,6 +3,7 @@ import { ref, reactive } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { useStore } from 'vuex';
 import { User, Lock } from '@element-plus/icons-vue';
+import encryption from '@/utils/encryption';
 
 const router = useRouter();
 const route = useRoute();
@@ -13,7 +14,7 @@ const loading = ref(false);
 
 function handleLogin() {
     loading.value = true;
-    store.dispatch('user/signin', form)
+    store.dispatch('user/signin', encryption(form))
         .then(() => router.push(route.query.redirect ?? '/'))
         .catch(error => console.error('Signin error:', error))
         .finally(() => (loading.value = false));
