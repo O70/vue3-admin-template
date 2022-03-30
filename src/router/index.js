@@ -9,6 +9,11 @@ import Routes from './routes';
 const routes = [
     {
         path: '/signin',
+        component: () => import('@/views/base/signin.vue'),
+        meta: { hidden: true }
+    },
+    {
+        path: '/signin/v2',
         component: () => import('@/views/base/signin-v2.vue'),
         meta: { hidden: true }
     },

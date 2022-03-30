@@ -10,6 +10,7 @@ NProgress.configure({ showSpinner: false });
 
 const PERMITS = [
     '/signin',
+    '/signin/v2',
     '/signup/org',
     '/signup/user'
 ];
