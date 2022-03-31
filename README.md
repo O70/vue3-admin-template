@@ -1,5 +1,7 @@
 # Vue 3 Admin Template
 
+DMPP starts, pauses updates.
+
 ## 命名规范
 
 - 文件名称小写
