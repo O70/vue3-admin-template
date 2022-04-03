@@ -10,6 +10,14 @@ export async function signin(Authorization) {
     });
 }
 
+export async function signinV1(data) {
+    return request({
+        url: '/api/admin/auth/login',
+        method: 'POST',
+        data
+    });
+}
+
 export async function info() {
     /* return request({
         url: '/api/admin/user',
