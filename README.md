@@ -21,6 +21,7 @@ DMPP starts, pauses updates.
 - [ ] `.env`(Page title)
 - [ ] Page style
 - [ ] Reset router
+- [ ] `@RequestBody` with `@GetMapping`
 
 ### Functions
 
