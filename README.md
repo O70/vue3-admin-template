@@ -23,6 +23,7 @@ DMPP starts, pauses updates.
 - [ ] Reset router
 - [ ] `@RequestBody` with `@GetMapping`
 - [ ] asciidoctor
+- [ ] interface spec
 
 ### Functions
 
