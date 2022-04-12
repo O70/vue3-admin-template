@@ -24,6 +24,7 @@ DMPP starts, pauses updates.
 - [ ] `@RequestBody` with `@GetMapping`
 - [ ] asciidoctor
 - [ ] interface spec
+- [ ] 与dmpp-pedestal结合
 
 ### Functions
 
