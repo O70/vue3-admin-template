@@ -25,6 +25,7 @@ DMPP starts, pauses updates.
 - [ ] asciidoctor
 - [ ] interface spec
 - [ ] 与dmpp-pedestal结合
+- [ ] login methods: username/password, sms, AD
 
 ### Functions
 
