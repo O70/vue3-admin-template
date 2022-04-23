@@ -1,13 +1,24 @@
 :toc-title: Data Middle Platform of Personnel
-:toc: left
+// :toc: left
 :toclevels: 4
 :source-highlighter: rouge
 
 = {toc-title}
 
+== Tasks
+
 - [ ] List / Page List query conditions(pagation)
-- [ ] Dict / Org findByCodes and unique api
 - [ ] Login
-- [ ] Supplier profiles api
 - [ ] Fix method `org.thraex.toolkit.model.AbstractTree#toTree`
 - [ ] **modules** refactored into microservices
+- [ ] remove `thraex.supplier.mock-prefix`
+- [ ] Optimization `@EnableGeneric` annotations, add `boolean genericRouterFunction() default true;`
+- [ ] Refactor databases table name
+- [ ] Refactor **Tests**, change MySQL to H2. Optimization performance
+
+== APIS
+
+- [ ] Dict / Org findByCodes and unique api
+- [x] Supplier profiles
+- [ ] Optimize profiles api performance
+- [ ] Profile completion percentage
