@@ -22,7 +22,7 @@
 - [ ] Optimization `@EnableGeneric` annotations, add `boolean genericRouterFunction() default true;`
 - [ ] Refactor databases table name
 - [ ] Refactor **Tests**, change MySQL to H2. Optimization performance
-- [ ] Optimization security
+- [ ] Optimization security / token
 - [ ] Remove `Avatar`
 
 == APIS
@@ -31,3 +31,4 @@
 - [x] Supplier profiles
 - [ ] Optimize profiles api performance
 - [ ] Profile completion percentage
+- [ ] Find Dict by codes
