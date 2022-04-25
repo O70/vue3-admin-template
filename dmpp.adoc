@@ -5,16 +5,25 @@
 
 = {toc-title}
 
+== Important
+
+- [ ] Login
+- [ ] Avatar
+- [ ] 修改
+- [ ] 质疑修改
+- [ ] 百分比
+
 == Tasks
 
 - [ ] List / Page List query conditions(pagation)
-- [ ] Login
 - [ ] Fix method `org.thraex.toolkit.model.AbstractTree#toTree`
 - [ ] **modules** refactored into microservices
-- [ ] remove `thraex.supplier.mock-prefix`
+- [x] remove `thraex.supplier.mock-prefix`
 - [ ] Optimization `@EnableGeneric` annotations, add `boolean genericRouterFunction() default true;`
 - [ ] Refactor databases table name
 - [ ] Refactor **Tests**, change MySQL to H2. Optimization performance
+- [ ] Optimization security
+- [ ] Remove `Avatar`
 
 == APIS
 

@@ -26,7 +26,8 @@ export default defineConfig({
         port: '8717',
         proxy: {
             '/api/admin': {
-                target: 'http://localhost:8037',
+                // target: 'http://localhost:8037',
+                target: 'http://localhost:9717',
                 changeOrigin: true,
                 rewrite: p => {
                     console.log(p.replace(/\/api\/admin/g, ''));
