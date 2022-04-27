@@ -34,3 +34,10 @@
 - [ ] Remove `Avatar`
 - [ ] `JpaEntity` change to `Auditable`
 - [ ] `AuditorAware` -> `ReactiveAuditorAware`
+
+## Questions
+
+- FamilyServiceImpl: // TODO: Question...
+- Empty to null ? throw exception
+- (if else) to (? :)
+- Blank line
