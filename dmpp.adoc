@@ -15,11 +15,13 @@
 
 == APIS
 
-- [ ] Dict / Org findByCodes and unique api
+- [ ] Dict / Org findByCodes and unique apik
 - [x] Supplier profiles
 - [ ] ❌ Deprecated: Optimize profiles api performance
 - [ ] Profile completion percentage
 - [ ] Find Dict by codes
+
+Adapter
 
 == Tasks
 
@@ -34,6 +36,7 @@
 - [ ] Remove `Avatar`
 - [ ] `JpaEntity` change to `Auditable`
 - [ ] `AuditorAware` -> `ReactiveAuditorAware`
+- [ ] Foreign key for `@OneToMany`
 
 ## Questions
 

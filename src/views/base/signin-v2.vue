@@ -9,13 +9,16 @@ const router = useRouter();
 const route = useRoute();
 const store = useStore();
 
-const form = reactive({ username: 'master', password: 'master' });
+// const form = reactive({ username: '13677889091', password: '111111' });
+const form = reactive({ username: '13312345678', password: '111111' });
 const loading = ref(false);
 
 function handleLogin() {
     loading.value = true;
+    console.log(encryption(form).replaceAll('Bearer ', ''));
     store.dispatch('user/signin', encryption(form))
-        .then(() => router.push(route.query.redirect ?? '/'))
+        // .then(() => router.push(route.query.redirect ?? '/'))
+        .then(() => console.log('redirect...'))
         .catch(error => console.error('Signin error:', error))
         .finally(() => (loading.value = false));
 }
