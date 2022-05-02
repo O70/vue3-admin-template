@@ -1,0 +1,74 @@
+= Notes
+
+== Docker
+
+=== MySQL
+
+[,bash]
+----
+docker pull --platform linux/amd64 mysql:5.7.38
+----
+
+[,bash]
+----
+docker run -d --name c-mysql -e MYSQL_ROOT_PASSWORD=hanzo -p 3307:3306 mysql:5.7.38
+----
+
+== IDEA
+
+=== Settings
+
+- import *: `Settings >Editor>Code Style>Java>Scheme Default> Imports`
+- Ensure line feed at file end on Save: `Editor -> General`
+
+=== SQL
+
+[,SQL]
+----
+drop database if exists dmpp_pedestal;
+create database dmpp_pedestal character set utf8;
+
+drop database if exists dmpp_pedestal_docs;
+create database dmpp_pedestal_docs character set utf8;
+
+select *
+from base_citizen;
+
+update base_citizen set mobile = '13677889091';
+update base_citizen set mobile = '13312345678';
+----
+
+== Workflow
+
+- 2-3 month, OAPlus，满足所有需求的工作流引擎
+
+== MinIO
+
+[,bash]
+----
+docker pull --platform linux/amd64 minio/minio:RELEASE.2022-04-30T22-23-53Z.fips
+----
+
+[,bash]
+----
+docker run \
+  -d \
+  --name c-minio \
+  -p 9000:9000 \
+  -p 9001:9001 \
+  -e "MINIO_ROOT_USER=root" \
+  -e "MINIO_ROOT_PASSWORD=minio-admin" \
+  minio/minio:RELEASE.2022-04-30T22-23-53Z.fips server /data --console-address ":9001"
+----
+
+[,bash]
+----
+docker run \
+  -d \
+  --name c-minio \
+  -p 9000:9000 \
+  -p 9001:9001 \
+  -e "MINIO_ROOT_USER=root" \
+  -e "MINIO_ROOT_PASSWORD=minio-admin" \
+  minio/minio:RELEASE.2022-04-30T22-23-53Z.fips server /data --console-address ":9001" --address ":9000"
+----
