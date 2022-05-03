@@ -58,6 +58,7 @@ docker run \
   -p 9001:9001 \
   -e "MINIO_ROOT_USER=root" \
   -e "MINIO_ROOT_PASSWORD=minio-admin" \
+  -v ~/Workspace/Dockers/MinIO/data:/data \
   minio/minio:RELEASE.2022-04-30T22-23-53Z.fips server /data --console-address ":9001"
 ----
 
@@ -72,3 +73,8 @@ docker run \
   -e "MINIO_ROOT_PASSWORD=minio-admin" \
   minio/minio:RELEASE.2022-04-30T22-23-53Z.fips server /data --console-address ":9001" --address ":9000"
 ----
+
+
+~/Library/Application Support/JetBrains/IntelliJIdea2022.1
+
+~/Downloads/Software/ideas/idea-active2
