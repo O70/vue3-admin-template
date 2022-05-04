@@ -78,3 +78,17 @@ docker run \
 ~/Library/Application Support/JetBrains/IntelliJIdea2022.1
 
 ~/Downloads/Software/ideas/idea-active2
+
+[,java]
+----
+// 4. Check parameter
+Class<?> fieldType = field.getType();
+Type fieldGenericType = field.getGenericType();
+if (Collection.class.isAssignableFrom(fieldType)
+        && ParameterizedType.class.isAssignableFrom(fieldGenericType.getClass())) {
+    Type[] actualType = ((ParameterizedType) fieldGenericType).getActualTypeArguments();
+    fieldType = (Class<?>) actualType[0];
+}
+
+Object targetValue = mapper.convertValue(value, fieldType);
+----
