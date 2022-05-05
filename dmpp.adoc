@@ -16,6 +16,7 @@
 - [ ] 后台手动百分比计算(AOP暂延)
 - [ ] Dicts API
 - [ ] 安全
+- [ ] Databases schema name
 
 - [ ] 数据初始化
 - [ ] 项目构建 - Docker(F/B)
@@ -29,7 +30,7 @@
 - [x] Supplier profiles
 - [ ] ❌ Deprecated: Optimize profiles api performance
 - [ ] Profile completion percentage
-- [ ] Find Dict by codes
+- [x] Find Dict by codes
 
 Adapter
 
