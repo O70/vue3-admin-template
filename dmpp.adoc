@@ -54,3 +54,60 @@ Adapter
 - Empty to null ? throw exception
 - (if else) to (? :)
 - Blank line
+
+## Configuration
+
+.main application-local.yml
+[,yaml]
+----
+spring:
+  jackson:
+    default-property-inclusion: always
+  datasource:
+    url: jdbc:mysql://localhost:3307/dmpp_pedestal?useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    password: hanzo
+  jpa:
+#    hibernate:
+#      ddl-auto: create
+    show-sql: true
+
+logging:
+  level:
+    org.thraex: trace
+
+thraex:
+  security:
+    token:
+      exp: 720
+#thraex:
+#  security:
+#    permitted:
+#      - /docs/**
+#      - /**
+minio:
+  url: http://localhost:9000
+  access-key: root
+  secret-key: minio-admin
+  bucket: dev
+  web-url: ${minio.url}/${minio.bucket}/
+----
+
+.test application-local.yml
+[,yaml]
+----
+spring:
+  jackson:
+    default-property-inclusion: always
+  datasource:
+    url: jdbc:mysql://localhost:3307/dmpp_pedestal_docs?useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    password: hanzo
+
+debug: true
+
+minio:
+  url: http://localhost:9000
+  access-key: root
+  secret-key: minio-admin
+  bucket: dev
+  web-url: ${minio.url}/${minio.bucket}/
+----

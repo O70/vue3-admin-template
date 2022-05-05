@@ -46,6 +46,7 @@ update base_citizen set mobile = '13312345678';
 
 [,bash]
 ----
+docker pull minio/minio:RELEASE.2022-04-30T22-23-53Z.fips
 docker pull --platform linux/amd64 minio/minio:RELEASE.2022-04-30T22-23-53Z.fips
 ----
 
