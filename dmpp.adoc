@@ -9,14 +9,14 @@
 
 - [ ] Login
 - [x] Avatar
-- [x] 修改 - *50%*
+- [x] Profiles修改
 - [ ] 修改字段可配置
 - [x] 质疑修改(工单)
-- [ ] 获取百分比
-- [ ] 后台手动百分比计算(AOP暂延)
+- [x] 获取百分比
+- [x] ✅后台手动百分比计算(AOP暂延)
 - [x] ❌ Dicts API
-- [ ] 安全
 - [ ] Databases schema name
+- [ ] Security...
 
 - [ ] 数据初始化
 - [ ] 项目构建 - Docker(F/B)
@@ -26,18 +26,17 @@
 
 == Docs
 
-- [ ] Profiles modify tests
-- [ ] `/supplier/profiles/changer`
-- [ ] `/supplier/profiles/proportion`
-- [ ] Poportion tests
+- [ ] Profiles modify tests: `/supplier/profiles/changer`
+- [ ] Get poportion tests: `/supplier/profiles/proportion`
 
 == APIS
 
-- [ ] Dict / Org findByCodes and unique apik
+- [ ] Dict / Org findByCodes and unique api
 - [x] Supplier profiles
-- [ ] ❌ Deprecated: Optimize profiles api performance
-- [ ] Profile completion percentage
+- [x] ❌ Deprecated: Optimize profiles api performance
+- [x] Profile completion percentage
 - [x] Find Dict by codes
+- [ ] AOP计算百分比
 
 Adapter
 
@@ -55,6 +54,7 @@ Adapter
 - [ ] `JpaEntity` change to `Auditable`
 - [ ] `AuditorAware` -> `ReactiveAuditorAware`
 - [ ] Foreign key for `@OneToMany`
+- [ ] `CompletableFuture`
 
 ## Questions
 
