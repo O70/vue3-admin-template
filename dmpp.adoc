@@ -7,7 +7,7 @@
 
 == Important
 
-- [ ] Login
+- [ ] ✨Login
 - [x] Avatar
 - [x] Profiles修改
 - [ ] 修改字段可配置
@@ -15,7 +15,7 @@
 - [x] 获取百分比
 - [x] ✅后台手动百分比计算(AOP暂延)
 - [x] ❌ Dicts API
-- [ ] Databases schema name
+- [x] Databases schema name
 - [ ] Security...
 
 - [ ] 数据初始化
@@ -28,6 +28,7 @@
 
 - [ ] Profiles modify tests: `/supplier/profiles/changer`
 - [ ] Get poportion tests: `/supplier/profiles/proportion`
+- [ ] Reset poportion tests: `/supplier/profiles/proportion/reset`
 
 == APIS
 
