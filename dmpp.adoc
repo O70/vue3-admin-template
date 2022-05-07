@@ -14,6 +14,7 @@
 - [x] 质疑修改(工单)
 - [x] 获取百分比
 - [x] ✅后台手动百分比计算(AOP暂延)
+- [x] ❌ Deprecated: AOP计算百分比，后台无操作
 - [x] ❌ Dicts API
 - [x] Databases schema name
 - [ ] Security...
@@ -29,6 +30,7 @@
 - [ ] Profiles modify tests: `/supplier/profiles/changer`
 - [ ] Get poportion tests: `/supplier/profiles/proportion`
 - [ ] Reset poportion tests: `/supplier/profiles/proportion/reset`
+- [ ] Cheats
 
 == APIS
 
@@ -37,7 +39,6 @@
 - [x] ❌ Deprecated: Optimize profiles api performance
 - [x] Profile completion percentage
 - [x] Find Dict by codes
-- [ ] AOP计算百分比
 
 Adapter
 
@@ -56,6 +57,7 @@ Adapter
 - [ ] `AuditorAware` -> `ReactiveAuditorAware`
 - [ ] Foreign key for `@OneToMany`
 - [ ] `CompletableFuture`
+- [ ] Move `DmppImplicitNamingStrategy` to Generic
 
 ## Questions
 
