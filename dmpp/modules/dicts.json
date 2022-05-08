@@ -455,16 +455,16 @@
   ]
  },
  {
-  "label": "岗位",
-  "code": "DICT_STATION",
+  "label": "岗位类型",
+  "code": "DICT_STATION_TYPE",
   "children": [
    {
     "label": "管理岗",
-    "code": "DICT_STATION_GLG"
+    "code": "DICT_STATION_TYPE_GLG"
    },
    {
     "label": "技术岗",
-    "code": "DICT_STATION_JSG"
+    "code": "DICT_STATION_TYPE_JSG"
    }
   ]
  },
@@ -810,10 +810,10 @@
         {
             "label":"高级政工师",
             "code":"DICT_JOB_TITLE_ZGS_GJZGS"
-        },
+        }
 
     ]
-   },
+   }
   ]
  },
 
@@ -1224,15 +1224,15 @@
    },
    {
     "label": "人工智能与信息工程",
-    "code": "DICT_DISCIPLINES_DZX",
+    "code": "DICT_DISCIPLINES_RGZNYXXGC",
     "children": [
     {
         "label":"人工智能",
-        "code":"DICT_DISCIPLINE_XNYKXYGC_QNYRLDC"
+        "code":"DICT_DISCIPLINES_RGZNYXXGC_QNYRLDC"
     },
     {
         "label":"信息工程",
-        "code":"DICT_DISCIPLINE_XNYKXYGC_XCLCN"
+        "code":"DICT_DISCIPLINES_RGZNYXXGC_XCLCN"
     }
     ]
    },
@@ -1260,8 +1260,5 @@
 ]
 
 
-国籍，民族，岗位字段熊表无，职务表格字段需要改熊表,
-项目来源和项目类型一一对应字典如何做按科研平台
-知识产权按科研平台
 
 

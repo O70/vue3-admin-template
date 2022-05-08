@@ -1,0 +1,25 @@
+= DMPP Initial Data
+
+== Step
+
+== Step 1
+
+== 创建数据库
+
+[,sql]
+----
+drop database if exists dmpp_pedestal;
+create database dmpp_pedestal character set utf8;
+----
+
+.Dict
+[,sql]
+----
+delete from base_dict where 1 = 1 order by level desc;
+----
+
+.Citizen
+[,sql]
+----
+insert into pedestal_citizen(id, name, mobile, deleted) values (uuid(), '鬼王', '13677889091', false);
+----
