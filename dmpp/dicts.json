@@ -1,0 +1,1267 @@
+[
+ {
+  "label": "性别",
+  "code": "DICT_SEX",
+  "children": [
+   {
+    "label": "男",
+    "code": "DICT_SEX_MAN"
+   },
+   {
+    "label": "女",
+    "code": "DICT_SEX_FEMALE"
+   }
+  ]
+ },
+ {
+  "label": "婚姻状态",
+  "code": "DICT_MARRIAGE",
+  "children": [
+    {
+    "label": "未婚",
+    "code": "DICT_MARRIAGE_WH"
+   },
+   {
+    "label": "已婚",
+    "code": "DICT_MARRIAGE_YH"
+   },
+   
+   {
+    "label": "离异",
+    "code": "DICT_MARRIAGE_LY"
+   },
+   
+   {
+    "label": "丧偶",
+    "code": "DICT_MARRIAGE_SO"
+   }
+  ]
+ },
+ {
+  "label": "证件类型",
+  "code": "DICT_CREDENTIALS_TYPE",
+  "children": [
+    {
+    "label": "身份证",
+    "code": "DICT_CREDENTIALS_TYPE_SFZ"
+   },
+   {
+    "label": "护照",
+    "code": "DICT_CREDENTIALS_TYPE_HZ"
+   },
+   
+   {
+    "label": "军官证",
+    "code": "DICT_CREDENTIALS_TYPE_JGZ"
+   },
+   
+   {
+    "label": "学生证",
+    "code": "DICT_CREDENTIALS_TYPE_XSZ"
+   }
+  ]
+ },
+{
+  "label": "户口类型",
+  "code": "DICT_REGISTRY_TYPE",
+  "children": [
+   {
+    "label": "农业",
+    "code": "DICT_REGISTRY_TYPE_NY"
+   },
+   {
+    "label": "非农业",
+    "code": "DICT_REGISTRY_TYPE_FNY"
+   }
+  ]
+ },
+{
+  "label": "学历",
+  "code": "DICT_DIPLOMA",
+  "children": [
+    {
+    "label": "无",
+    "code": "DICT_DIPLOMA_NONE"
+   },
+   {
+    "label": "小学",
+    "code": "DICT_DIPLOMA_XX"
+   },
+   
+   {
+    "label": "初中",
+    "code": "DICT_DIPLOMA_CZ"
+   },
+   
+   {
+    "label": "高中",
+    "code": "DICT_DIPLOMA_GZ"
+   },
+   {
+    "label": "职高",
+    "code": "DICT_DIPLOMA_ZG"
+   },
+   {
+    "label": "中专",
+    "code": "DICT_DIPLOMA_ZZ"
+   },
+   
+   {
+    "label": "技校",
+    "code": "DICT_DIPLOMA_JX"
+   },
+   
+   {
+    "label": "大专",
+    "code": "DICT_DIPLOMA_DZ"
+   },
+   {
+    "label": "成人专科",
+    "code": "DICT_DIPLOMA_CRZK"
+   },
+   {
+    "label": "自考专科",
+    "code": "DICT_DIPLOMA_ZKZK"
+   },
+   
+   {
+    "label": "本科",
+    "code": "DICT_DIPLOMA_BK"
+   },
+   
+   {
+    "label": "成人本科",
+    "code": "DICT_DIPLOMA_CRBK"
+   },
+   {
+    "label": "自考本科",
+    "code": "DICT_DIPLOMA_ZKBK"
+   },
+   {
+    "label": "硕士",
+    "code": "DICT_DIPLOMA_SS"
+   },
+   
+   {
+    "label": "博士",
+    "code": "DICT_DIPLOMA_BS"
+   }
+  ]
+ },
+{
+  "label": "学位",
+  "code": "DICT_DEGREE",
+  "children": [
+   {
+    "label": "无",
+    "code": "DICT_DEGREE_NONE"
+   },
+   {
+    "label": "学士",
+    "code": "DICT_DEGREE_XS"
+   },
+    {
+    "label": "硕士",
+    "code": "DICT_DEGREE_SS"
+   },
+   {
+    "label": "博士",
+    "code": "DICT_DEGREE_BS"
+   }
+  ]
+ },
+ {
+  "label": "关系",
+  "code": "DICT_RELATION",
+  "children": [
+    {
+    "label": "父亲",
+    "code": "DICT_RELATION_FATHER"
+   },
+   {
+    "label": "母亲",
+    "code": "DICT_RELATION_MOTHER"
+   },
+   
+   {
+    "label": "夫妻",
+    "code": "DICT_RELATION_FQ"
+   },
+   
+   {
+    "label": "兄弟",
+    "code": "DICT_RELATION_BROTHER"
+   },
+   {
+    "label": "姐妹",
+    "code": "DICT_RELATION_SISTER"
+   },
+   {
+    "label": "养子",
+    "code": "DICT_RELATION_YZ"
+   },
+   
+   {
+    "label": "养女",
+    "code": "DICT_RELATION_YN"
+   },
+   
+   {
+    "label": "继父",
+    "code": "DICT_RELATION_JF"
+   },
+   {
+    "label": "继母",
+    "code": "DICT_RELATION_JM"
+   },
+   {
+    "label": "祖孙",
+    "code": "DICT_RELATION_ZS"
+   },
+   {
+    "label": "继子",
+    "code": "DICT_RELATION_JZ"
+   },
+   
+   {
+    "label": "继女",
+    "code": "DICT_RELATION_JN"
+   },
+   {
+    "label": "婆媳",
+    "code": "DICT_RELATION_PX"
+   },
+   {
+    "label": "翁婿",
+    "code": "DICT_RELATION_WX"
+   }
+  ]
+ },
+{
+  "label": "政治面貌",
+  "code": "DICT_POLITICAL_FACE",
+  "children": [
+   {
+    "label": "群众",
+    "code": "DICT_POLITICAL_FACE_QZ"
+   },
+   {
+    "label": "共青团员",
+    "code": "DICT_POLITICAL_FACE_GQTY"
+   },
+    {
+    "label": "中央预备党员",
+    "code": "DICT_POLITICAL_FACE_ZYYBDY"
+   },
+   {
+    "label": "党员",
+    "code": "DICT_POLITICAL_FACE_DY"
+   },
+    {
+    "label": "致公党",
+    "code": "DICT_POLITICAL_FACE_ZGD"
+   },
+   {
+    "label": "民盟盟员",
+    "code": "DICT_POLITICAL_FACE_MMMY"
+   },
+    {
+    "label": "九三学社社员",
+    "code": "DICT_POLITICAL_FACE_JSXSSY"
+   },
+   {
+    "label": "民盟盟员和中共党员",
+    "code": "DICT_POLITICAL_FACE_MMMYHZGDY"
+   },
+   {
+    "label": "民建会员",
+    "code": "DICT_POLITICAL_FACE_MJHY"
+   }
+  ]
+ },
+{
+  "label": "人员类型",
+  "code": "DICT_TYPE",
+  "children": [
+   {
+    "label": "行政管理",
+    "code": "DICT_TYPE_XZGL"
+   },
+   {
+    "label": "专业技术",
+    "code": "DICT_TYPE_ZYJS"
+   },
+    {
+    "label": "操作服务",
+    "code": "DICT_TYPE_CZFW"
+   }
+  ]
+ },
+{
+  "label": "用工类型",
+  "code": "DICT_EMPLOYEE_TYPE",
+  "children": [
+   {
+    "label": "合同化",
+    "code": "DICT_EMPLOYEE_TYPE_HTH"
+   },
+   {
+    "label": "市场化",
+    "code": "DICT_EMPLOYEE_TYPE_SCH"
+   },
+    {
+    "label": "第三方",
+    "code": "DICT_EMPLOYEE_TYPE_DSF"
+   },
+   {
+    "label": "合作伙伴",
+    "code": "DICT_EMPLOYEE_TYPE_HZHB"
+   },
+   {
+    "label": "分院借入",
+    "code": "DICT_EMPLOYEE_TYPE_FYJR"
+   },
+    {
+    "label": "回聘",
+    "code": "DICT_EMPLOYEE_TYPE_HP"
+   },{
+    "label": "廊坊园区第三方",
+    "code": "DICT_EMPLOYEE_TYPE_LFYQDSF"
+   }
+  ]
+ },
+{
+  "label": "是否双职工",
+  "code": "DICT_PAIR",
+  "children": [
+   {
+    "label": "是",
+    "code": "DICT_PAIR_YES"
+   },
+   {
+    "label": "否",
+    "code": "DICT_PAIR_NO"
+   }
+  ]
+ },
+{
+  "label": "职级",
+  "code": "DICT_RANK",
+  "children": [
+   {
+    "label": "一级正",
+    "code": "DICT_RANK_YJZ"
+   },
+   {
+    "label": "一级副",
+    "code": "DICT_RANK_YJF"
+   },
+   {
+    "label": "二级特正",
+    "code": "DICT_RANK_EJTZ"
+   },
+   {
+    "label": "二级正",
+    "code": "DICT_RANK_EJZ"
+   },
+   {
+    "label": "二级副",
+    "code": "DICT_RANK_EJF"
+   },
+   {
+    "label": "三级特正",
+    "code": "DICT_RANK_SJTZ"
+   },
+   {
+    "label": "三级正",
+    "code": "DICT_RANK_SJZ"
+   },
+   {
+    "label": "三级副",
+    "code": "DICT_RANK_SJF"
+   },
+   {
+    "label": "高级主管",
+    "code": "DICT_RANK_GJZG"
+   },
+   {
+    "label": "主管",
+    "code": "DICT_RANK_ZG"
+   },
+   {
+    "label": "主办",
+    "code": "DICT_RANK_ZB"
+   },
+   {
+    "label": "助理主办",
+    "code": "DICT_RANK_ZLZB"
+   },
+   {
+    "label": "一般人员",
+    "code": "DICT_RANK_YBRY"
+   }
+  ]
+ },
+{
+  "label": "岗位状态",
+  "code": "DICT_JOB_STATUS",
+  "children": [
+   {
+    "label": "在岗",
+    "code": "DICT_JOB_STATUS_ZG"
+   },
+   {
+    "label": "不在岗",
+    "code": "DICT_JOB_STATUS_BZG"
+   },
+   {
+    "label": "借调",
+    "code": "DICT_JOB_STATUS_JD"
+   },
+   {
+    "label": "借用",
+    "code": "DICT_JOB_STATUS_JY"
+   },
+   {
+    "label": "双向交流",
+    "code": "DICT_JOB_STATUS_SXJL"
+   },
+   {
+    "label": "长期病假",
+    "code": "DICT_JOB_STATUS_CQBJ"
+   }
+  ]
+ },
+{
+  "label": "减册原因",
+  "code": "DICT_LEAVE_REASON",
+  "children": [
+   {
+    "label": "退休",
+    "code": "DICT_LEAVE_REASON_TX"
+   },
+   {
+    "label": "离职",
+    "code": "DICT_LEAVE_REASON_LZ"
+   },
+   {
+    "label": "调出",
+    "code": "DICT_LEAVE_REASON_DC"
+   },
+   {
+    "label": "去世",
+    "code": "DICT_LEAVE_REASON_QS"
+   }
+  ]
+ },
+ {
+  "label": "岗位",
+  "code": "DICT_STATION",
+  "children": [
+   {
+    "label": "管理岗",
+    "code": "DICT_STATION_GLG"
+   },
+   {
+    "label": "技术岗",
+    "code": "DICT_STATION_JSG"
+   }
+  ]
+ },
+ {
+  "label": "劳动合同类型",
+  "code": "DICT_TYPEOF_CONTRACT",
+  "children": [
+   {
+    "label": "三年期限",
+    "code": "DICT_TYPEOF_CONTRACT_THREE"
+   },
+   {
+    "label": "五年期限",
+    "code": "DICT_TYPEOF_CONTRACT_FIVE"
+   },
+   {
+    "label": "无固定期限",
+    "code": "DICT_TYPEOF_CONTRACT_LONG"
+   }
+  ]
+ },
+ {
+  "label": "职务类型",
+  "code": "DICT_Job_TYPE",
+  "children": [
+   {
+    "label": "管理职务",
+    "code": "DICT_JOB_TYPE_GLZW"
+   },
+   {
+    "label": "技术职务",
+    "code": "DICT_JOB_TYPE_JSZW"
+   }
+  ]
+ },
+{
+  "label": "技术职务",
+  "code": "DICT_TECHNICAL_POSITION",
+  "children": [
+   {
+    "label": "集团公司首席专家",
+    "code": "DICT_TECHNICAL_POSITION_JTGSSXZJ"
+   },
+   {
+    "label": "集团公司高级专家",
+    "code": "DICT_TECHNICAL_POSITION_JTGSGJZJ"
+   },
+   {
+    "label": "企业首席专家",
+    "code": "DICT_TECHNICAL_POSITION_QYSXZJ"
+   },
+   {
+    "label": "企业高级专家",
+    "code": "DICT_TECHNICAL_POSITION_QYGJZJ"
+   },
+   {
+    "label": "一级工程师",
+    "code": "DICT_TECHNICAL_POSITION_YJGCS"
+   },
+   {
+    "label": "二级工程师",
+    "code": "DICT_TECHNICAL_POSITION_EJGCS"
+   },
+   {
+    "label": "三级工程师",
+    "code": "DICT_TECHNICAL_POSITION_SJGCS"
+   },
+   {
+    "label": "助理工程师",
+    "code": "DICT_TECHNICAL_POSITION_ZLGCS"
+   },
+    {
+    "label": "技术员",
+    "code": "DICT_TECHNICAL_POSITION_JSY"
+   }
+  ]
+ },
+
+
+ {
+  "label": "职称",
+  "code": "DICT_JOB_TITLE",
+  "children": [
+   {
+    "label": "技术卫生系列",
+    "code": "DICT_JOB_TITLE_JSWS",
+    "children": [
+        {
+            "label":"主任医师",
+            "code":"DICT_JOB_TITLE_JSWS_ZRYS"
+        },
+        {
+            "label":"副主任医师",
+            "code":"DICT_JOB_TITLE_JSWS_FZRYS"
+        },
+        {
+            "label":"医师",
+            "code":"DICT_JOB_TITLE_JSWS_YS"
+        },
+        {
+            "label":"医士",
+            "code":"DICT_JOB_TITLE_JSWS_DOCTOR"
+        },
+        {
+            "label":"未评审医疗人员",
+            "code":"DICT_JOB_TITLE_JSWS_WPSYLRY"
+        },
+        {
+            "label":"主任药师",
+            "code":"DICT_JOB_TITLE_JSWS_Chief_PHARMACIST"
+        },
+        {
+            "label":"副主任药师",
+            "code":"DICT_JOB_TITLE_JSWS_FCHIEF_PHARMACIST"
+        },
+        {
+            "label":"主管药师",
+            "code":"DICT_JOB_TITLE_JSWS_ZGYS"
+        },
+        {
+            "label":"药师",
+            "code":"DICT_JOB_TITLE_JSWS_YSS"
+        },
+        {
+            "label":"药士",
+            "code":"DICT_JOB_TITLE_JSWS_YSSS"
+        },
+        {
+            "label":"未评审药剂人员",
+            "code":"DICT_JOB_TITLE_JSWS_WPSYJRY"
+        },
+        {
+            "label":"主任护师",
+            "code":"DICT_JOB_TITLE_JSWS_ZRHS"
+        },
+        {
+            "label":"副主任护师",
+            "code":"DICT_JOB_TITLE_JSWS_FZRHS"
+        },
+        {
+            "label":"主管护师",
+            "code":"DICT_JOB_TITLE_JSWS_ZGHS"
+        },
+        {
+            "label":"护师",
+            "code":"DICT_JOB_TITLE_JSWS_HS"
+        },
+        {
+            "label":"护士",
+            "code":"DICT_JOB_TITLE_JSWS_NURSE"
+        },
+        {
+            "label":"未评审护理人员",
+            "code":"DICT_JOB_TITLE_JSWS_WPSHLRY"
+        },
+        {
+            "label":"主任技师",
+            "code":"DICT_JOB_TITLE_JSWS_ZRJS"
+        },
+        {
+            "label":"副主任技师",
+            "code":"DICT_JOB_TITLE_JSWS_FZRJS"
+        },
+        {
+            "label":"主管技师",
+            "code":"DICT_JOB_TITLE_JSWS_ZGJS"
+        },
+        {
+            "label":"技师",
+            "code":"DICT_JOB_TITLE_JSWS_JS"
+        },
+        {
+            "label":"技士",
+            "code":"DICT_JOB_TITLE_JSWS_JSS"
+        },
+        {
+            "label":"未评审卫生技术人员",
+            "code":"DICT_JOB_TITLE_JSWS_WPSWSJJRY"
+        }
+    ]
+   },
+
+   {
+    "label": "会计系列",
+    "code": "DICT_JOB_TITLE_KJ",
+    "children": [
+         {
+            "label":"正高级会计师",
+            "code":"DICT_JOB_TITLE_KJ_ZGJ"
+
+        },
+        {
+            "label":"高级会计师",
+            "code":"DICT_JOB_TITLE_KJ_GJ"
+
+        },
+        {
+            "label":"会计师",
+            "code":"DICT_JOB_TITLE_KJ_KJS"
+
+        },
+        {
+            "label":"助理会计师",
+            "code":"DICT_JOB_TITLE_KJ_ZL"
+
+        },
+        {
+            "label":"会计员",
+            "code":"DICT_JOB_TITLE_KJ_KJY"
+
+        },
+        {
+            "label":"未评审会计人员",
+            "code":"DICT_JOB_TITLE_KJ_WPSKJRY"
+
+        }
+
+    ]
+   },
+   {
+    "label": "工程技术系列",
+    "code": "DICT_JOB_TITLE_GCJS",
+    "children": [
+         {
+            "label":"教授级高级工程师",
+            "code":"DICT_JOB_TITLE_GCJS_JSJGJGCS"
+        },
+        {
+            "label":"高级工程师",
+            "code":"DICT_JOB_TITLE_GCJS_GJGCS"
+        },
+        {
+            "label":"工程师",
+            "code":"DICT_JOB_TITLE_GCJS_GCS"
+        },
+        {
+            "label":"助理工程师",
+            "code":"DICT_JOB_TITLE_GCJS_ZLGCS"
+        },
+        {
+            "label":"技术员",
+            "code":"DICT_JOB_TITLE_GCJS_JSY"
+        },
+        {
+            "label":"未评审工程技术人员",
+            "code":"DICT_JOB_TITLE_GCJS_WPSGCJSRY"
+        }
+
+    ]
+   },
+   {
+    "label": "小学教育系列",
+    "code": "DICT_JOB_TITLE_XXJY",
+    "children": [
+         {
+            "label":"小学高级教师【同名两类】",
+            "code":"DOCT_JOB_TITLE_XXJY_XXGJJS"
+        },
+        {
+            "label":"小学一级教师",
+            "code":"DOCT_JOB_TITLE_XXJY_XXYJJS"
+        },
+        {
+            "label":"小学二级教师",
+            "code":"DOCT_JOB_TITLE_XXJY_XXEJJS"
+        },
+        {
+            "label":"小学三级教师",
+            "code":"DOCT_JOB_TITLE_XXJY_XXSJJS"
+        },
+        {
+            "label":"未评审小学教师",
+            "code":"DOCT_JOB_TITLE_XXJY_WPSXXJS"
+        },
+        {
+            "label":"幼儿高级教师【同名两类】",
+            "code":"DOCT_JOB_TITLE_XXJY_YEGJJS"
+        },
+        {
+            "label":"幼儿一级教师",
+            "code":"DOCT_JOB_TITLE_XXJY_YEYJJS"
+        },
+        {
+            "label":"幼儿二级教师",
+            "code":"DOCT_JOB_TITLE_XXJY_YEEJJS"
+        },
+        {
+            "label":"幼儿三级教师",
+            "code":"DOCT_JOB_TITLE_XXJY_YESJJS"
+        },
+        {
+            "label":"未评审幼儿教师",
+            "code":"DOCT_JOB_TITLE_XXJY_WPSYEJS"
+        }
+    ]
+   },
+   {
+    "label": "经济系列",
+    "code": "DICT_JOB_TITLE_JJ",
+    "children": [
+         {
+            "label":"教授级高级经济师",
+            "code":"DICT_JOB_TITLE_JJ_JSJGJ"
+        },
+        {
+            "label":"高级经济师",
+            "code":"DICT_JOB_TITLE_JJ_GJ"
+        },
+        {
+            "label":"经济师",
+            "code":"DICT_JOB_TITLE_JJ_JJS"
+        },
+        {
+            "label":"助理经济师",
+            "code":"DICT_JOB_TITLE_JJ_ZL"
+        },
+        {
+            "label":"经济员",
+            "code":"DICT_JOB_TITLE_JJ_JJY"
+        },
+        {
+            "label":"未评审经济专业人员",
+            "code":"DICT_JOB_TITLE_JJ_WPSJJZYRY"
+        }
+    ]
+   },
+   {
+    "label": "政工师系列",
+    "code": "DICT_JOB_TITLE_ZGS",
+    "children": [
+        {
+            "label":"政工员",
+            "code":"DICT_JOB_TITLE_ZGS_ZGY"
+        },
+        {
+            "label":"助理政工师",
+            "code":"DICT_JOB_TITLE_ZGS_ZLZGS"
+        },
+        {
+            "label":"政工师",
+            "code":"DICT_JOB_TITLE_ZGS_ZGS"
+        },
+        {
+            "label":"高级政工师",
+            "code":"DICT_JOB_TITLE_ZGS_GJZGS"
+        },
+
+    ]
+   },
+  ]
+ },
+
+ {
+  "label": "岗位",
+  "code": "DICT_STATION",
+  "children": [
+   {
+        "label":" 党组织 ",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZ"
+    },
+    {
+        "label":"党委书记",
+        "code":"DICT_CURRENT_GANG_TITLE_DWSJ"
+    },
+    {
+        "label":"党委副书记",
+        "code":"DICT_CURRENT_GANG_TITLE_DWFSJ"
+    },
+    {
+        "label":"党委委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DWWY"
+    },
+    {
+        "label":"党总支部书记",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBSJ"
+    },
+    {
+        "label":"党总支部副书记",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBFSJ"
+    },
+    {
+        "label":"党总支部组织委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBZZWY"
+    },
+    {
+        "label":"党总支部宣传委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBXCWY"
+    },
+    {
+        "label":"党总支部纪检委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBJJWY"
+    },
+    {
+        "label":"党总支部群工委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBQGWY"
+    },
+    {
+        "label":"党总支部青年委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBQNWY"
+    },
+    {
+        "label":"党总支部保密委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZZBBMWY"
+    },
+    {
+        "label":"党支部书记",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBSJ"
+    },
+    {
+        "label":"党支部副书记",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBFSJ"
+    },
+    {
+        "label":"党支部组织委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBZZWY"
+    },
+    {
+        "label":"党支部宣传委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBXCWY"
+    },
+    {
+        "label":"党支部纪检委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBJJWY"
+    },
+    {
+        "label":"党支部群工委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBQGWY"
+    },
+    {
+        "label":"党支部青年委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBQNWY"
+    },
+    {
+        "label":"党支部保密委员",
+        "code":"DICT_CURRENT_GANG_TITLE_DZBBMWY"
+    }
+  ]
+ },
+{
+  "label": "培训类型",
+  "code": "DICT_PX_TYPE",
+  "children": [
+   {
+    "label": "集团公司级",
+    "code": "DICT_PX_TYPE_JTGSJ"
+   },
+   {
+    "label": "院级",
+    "code": "DICT_PX_TYPE_YJ"
+   },
+   {
+    "label": "所级",
+    "code": "DICT_PX_TYPE_SJ"
+   },
+   {
+    "label": "其他",
+    "code": "DICT_PX_TYPE_QT"
+   }
+  ]
+ },
+ {
+  "label": "层级",
+  "code": "DICT_LEVEL",
+  "children": [
+   {
+    "label": "项目",
+    "code": "DICT_LEVEL_XM"
+   },
+   {
+    "label": "课题",
+    "code": "DICT_LEVEL_KT"
+   },
+   {
+    "label": "专题",
+    "code": "DICT_LEVEL_ZT"
+   }
+  ]
+ },
+{
+  "label": "交流语言",
+  "code": "DICT_LANGUAGE",
+  "children": [
+   {
+    "label": "中文",
+    "code": "DICT_LANGUAGE_CHINESE"
+   },
+   {
+    "label": "英语",
+    "code": "DICT_LANGUAGE_ENGLISH"
+   },
+   {
+    "label": "其他",
+    "code": "DICT_LANGUAGE_QT"
+   }
+  ]
+ },
+
+
+{
+  "label": "科研奖励获奖级别",
+  "code": "DICT_KY_LEVEL",
+  "children": [
+   {
+    "label": "特等奖",
+    "code": "DICT_KY_LEVEL_TDJ"
+   },
+   {
+    "label": "一等奖",
+    "code": "DICT_KY_LEVEL_YDJ"
+   },
+   {
+    "label": "二等奖",
+    "code": "DICT_KY_LEVEL_EDJ"
+   },
+   {
+    "label": "三等奖",
+    "code": "DICT_KY_LEVEL_SDJ"
+   }
+  ]
+ },
+
+{
+  "label": "党内奖励获奖级别",
+  "code": "DICT_DN_LEVEL",
+  "children": [
+   {
+    "label": "院级",
+    "code": "DICT_DN_LEVEL_YJ"
+   },
+   {
+    "label": "集团公司级",
+    "code": "DICT_DN_LEVEL_JTGSJ"
+   },
+   {
+    "label": "直属党委级",
+    "code": "DICT_DN_LEVEL_ZSDWJ"
+   },
+   {
+    "label": "中央企业级",
+    "code": "DICT_DN_LEVEL_ZYQYJ"
+   }
+  ]
+ },
+
+{
+  "label": "科研奖励获奖类别",
+  "code": "DICT_KY_TYPE",
+  "children": [
+   {
+    "label": "国家级",
+    "code": "DICT_KY_TYPE_GJJ"
+   },
+   {
+    "label": "省部级",
+    "code": "DICT_KY_TYPE_SBJ"
+   },
+   {
+    "label": "厅局级",
+    "code": "DICT_KY_TYPE_TJJ"
+   },
+   {
+    "label": "所级",
+    "code": "DICT_KY_TYPE_SJ"
+   }
+  ]
+ },
+
+{
+  "label": "党内奖励获奖类别",
+  "code": "DICT_DN_TYPE",
+  "children": [
+   {
+    "label": "优秀共产党员",
+    "code": "DICT_DN_TYPE_YXGCDY"
+   },
+   {
+    "label": "优秀党务工作者",
+    "code": "DICT_DN_TYPE_YXDWGZZ"
+   },
+   {
+    "label": "劳动模范",
+    "code": "DICT_DN_TYPE_LDMF"
+   },
+   {
+    "label": "三八红旗手",
+    "code": "DICT_DN_TYPE_SBHQS"
+   },
+   {
+    "label": "其他",
+    "code": "DICT_DN_TYPE_QT"
+   }
+  ]
+ },
+
+{
+  "label": "其他奖励获奖类别",
+  "code": "DICT_OTHER_TYPE",
+  "children": [
+   {
+    "label": "国家级",
+    "code": "DICT_OTHER_TYPE_GJJ"
+   },
+   {
+    "label": "省部级",
+    "code": "DICT_OTHER_TYPE_SBJ"
+   },
+   {
+    "label": "厅局级",
+    "code": "DICT_OTHER_TYPE_TJJ"
+   },
+   {
+    "label": "所级",
+    "code": "DICT_OTHER_TYPE_SJ"
+   }
+  ]
+ },
+
+{
+  "label": "所属学科",
+  "code": "DICT_DISCIPLINES",
+  "children": [
+   {
+    "label": "地质学",
+    "code": "DICT_DISCIPLINES_DZX",
+    "children": [
+    {
+        "label":"成藏与地球化学",
+        "code":"DICT_DISCIPLINE_DZX_CZYDQHX"
+    },
+    {
+        "label":"构造地质学",
+        "code":"DICT_DISCIPLINE_DZX_GZDZX"
+    },
+    {
+        "label":"沉积储层地质学",
+        "code":"DICT_DISCIPLINE_DZX_CJCCDZX"
+    },
+    {
+        "label":"地层学与古生物学",
+        "code":"DICT_DISCIPLINE_DZX_DCXYGSWX"
+    },
+    {
+        "label":"海洋地质学",
+        "code":"DICT_DISCIPLINE_DZX_HYDZX"
+    }
+    ]
+   },
+   {
+    "label": "地质资源与地质工程",
+    "code": "DICT_DISCIPLINES_DZZYYDZGC",
+    "children": [
+    {
+        "label":"矿产普查与勘探",
+        "code":"DICT_DISCIPLINE_DZZYYDZGC_KCPCYKT"
+    },
+    {
+        "label":"非常规油气地质与工程",
+        "code":"DICT_DISCIPLINE_DZZYYDZGC_FCGYQDZYGC"
+    },
+    {
+        "label":"油气资源工程",
+        "code":"DICT_DISCIPLINE_DZZYYDZGC_YQZYGC"
+    }
+    ]
+   },
+   {
+    "label": "油气田开发工程",
+    "code": "DICT_DISCIPLINES_YQTKFGC",
+    "children": [
+     {
+        "label":"油气田开发地质",
+        "code":"DICT_DISCIPLINE_YQTKFGC_YQTKFDZ"
+    },
+    {
+        "label":"油藏工程",
+        "code":"DICT_DISCIPLINE_YQTKFGC_YZGC"
+    },
+    {
+        "label":"气藏工程",
+        "code":"DICT_DISCIPLINE_YQTKFGC_QZGC"
+    },
+    {
+        "label":"提高采收率",
+        "code":"DICT_DISCIPLINE_YQTKFGC_TGCSL"
+    },
+    {
+        "label":"油层物理与渗流",
+        "code":"DICT_DISCIPLINE_YQTKFGC_YCWLYSL"
+    },
+    {
+        "label":"地下储库工程",
+        "code":"DICT_DISCIPLINE_YQTKFGC_DXCKGC"
+    }
+    ]
+   },
+   {
+    "label": "油气井工程",
+    "code": "DICT_DISCIPLINES_YQJGC",
+    "children": [
+    {
+        "label":"钻完井工程",
+        "code":"DICT_DISCIPLINE_YQJGC_ZWJGC"
+    },
+    {
+        "label":"采油气工程",
+        "code":"DICT_DISCIPLINE_YQJGC_CYQGC"
+    },
+    {
+        "label":"钻采机械与装备",
+        "code":"DICT_DISCIPLINE_YQJGC_ZCJXYZB"
+    },
+    {
+        "label":"储层改造",
+        "code":"DICT_DISCIPLINE_YQJGC_CCGZ"
+    },
+    {
+        "label":"油田化学",
+        "code":"DICT_DISCIPLINE_YQJGC_YTHX"
+    }
+    ]
+   },
+   {
+    "label": "地球物理学",
+    "code": "DICT_DISCIPLINES_DQWLX",
+    "children": [
+     {
+        "label":"勘探地球物理",
+        "code":"DICT_DISCIPLINE_DQWLX_KTDQWL"
+    },
+    {
+        "label":"测井地球物理",
+        "code":"DICT_DISCIPLINE__DQWLX_CJDQWL"
+    }
+    ]
+   },
+   {
+    "label": "新能源科学与工程",
+    "code": "DICT_DISCIPLINES_XNYKXYGC",
+    "children": [
+     {
+        "label":"地热",
+        "code":"DICT_DISCIPLINE_XNYKXYGC_DR"
+    },
+    {
+        "label":"伴生资源",
+        "code":"DICT_DISCIPLINE_XNYKXYGC_BSZY"
+    },
+    {
+        "label":"氢能与燃料电池",
+        "code":"DICT_DISCIPLINE_XNYKXYGC_QNYRLDC"
+    },
+    {
+        "label":"新材料储能",
+        "code":"DICT_DISCIPLINE_XNYKXYGC_XCLCN"
+    }
+    ]
+   },
+   {
+    "label": "人工智能与信息工程",
+    "code": "DICT_DISCIPLINES_DZX",
+    "children": [
+    {
+        "label":"人工智能",
+        "code":"DICT_DISCIPLINE_XNYKXYGC_QNYRLDC"
+    },
+    {
+        "label":"信息工程",
+        "code":"DICT_DISCIPLINE_XNYKXYGC_XCLCN"
+    }
+    ]
+   },
+   {
+    "label": "能源战略与经济工程",
+    "code": "DICT_DISCIPLINES_NYZLYJJGC",
+    "children": [
+    {
+        "label":"能源战略规划",
+        "code":"DICT_DISCIPLINE_NYZLYJJGC_NYZLGH"
+    },
+    {
+        "label":"油气资产评价",
+        "code":"DICT_DISCIPLINE_NYZLYJJGC_YQZCPJ"
+    },
+    {
+        "label":"综合能源管理",
+        "code":"DICT_DISCIPLINE_NYZLYJJGC_ZHNYGL"
+    }
+    ]
+   }
+  ]
+ }
+
+]
+
+
+国籍，民族，岗位字段熊表无，职务表格字段需要改熊表,
+项目来源和项目类型一一对应字典如何做按科研平台
+知识产权按科研平台
+
+
