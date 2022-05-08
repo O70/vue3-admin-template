@@ -22,4 +22,18 @@ delete from base_dict where 1 = 1 order by level desc;
 [,sql]
 ----
 insert into pedestal_citizen(id, name, mobile, deleted) values (uuid(), '鬼王', '13677889091', false);
+
+select *from base_dict order by level;
+select *from pedestal_citizen order by sort;
+select * from pedestal_car_plate;
+select * from pedestal_worker;
+select * from pedestal_family;
+select * from pedestal_contract;
+
+delete from pedestal_contract where 1 = 1;
+delete from pedestal_family where 1 = 1;
+delete from pedestal_worker where 1 = 1;
+delete from pedestal_car_plate where 1 = 1;
+delete from pedestal_citizen where 1 = 1;
+delete from base_dict where 1 = 1 order by level desc;
 ----
