@@ -281,19 +281,19 @@
  },
 {
   "label": "人员类型",
-  "code": "DICT_TYPE",
+  "code": "DICT_PERSONNEL_TYPE",
   "children": [
    {
     "label": "行政管理",
-    "code": "DICT_TYPE_XZGL"
+    "code": "DICT_PERSONNEL_TYPE_XZGL"
    },
    {
     "label": "专业技术",
-    "code": "DICT_TYPE_ZYJS"
+    "code": "DICT_PERSONNEL_TYPE_ZYJS"
    },
     {
     "label": "操作服务",
-    "code": "DICT_TYPE_CZFW"
+    "code": "DICT_PERSONNEL_TYPE_CZFW"
    }
   ]
  },
