@@ -1,6 +1,15 @@
 const dict = require('./modules/dict');
-const dicts = dict()
-// console.log('a', dicts)
+const org = require('./modules/org');
+
+// dict();
+org();
+
+// async function run() {
+//     const dicts = await dict(false);
+//     console.log('a', dicts)
+// }
+
+// run();
 
 
 // const fs = require('fs');
