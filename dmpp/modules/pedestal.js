@@ -42,12 +42,41 @@ function additional({ id: cid }, ind) {
         remark: "备注"
       };
     targetService({ url: '/worker', method: 'post', data: worker });
+
+    const family = {
+        cid,
+        name: "无极",
+        birth: "1899-10-05",
+        political: getDict('DICT_POLITICAL_FACE_DY'),
+        address: "工作地址",
+        post: "植物",
+        phone: "10086",
+        relation: getDict('DICT_RELATION_BROTHER'),
+        emergencyContact: false
+    };
+    new Array(2).fill(family).map((it, i) => Object.assign({}, it, {
+        name: `${it.name}-${i}`
+    })).forEach(data => targetService({ url: '/family', method: 'post', data }));
+
+    const contract = {
+        cid,
+        code: 'HT0008',
+        signTime: '2020-10-10',
+        name: '合同名称',
+        employCompany: '聘任单位',
+        post: null,
+        typeOfContract: getDict('DICT_TYPEOF_CONTRACT_LONG'),
+        startDate: '2019-10-10',
+        endDate: '2022-10-10'
+    };
+    new Array(2).fill(contract).map((it, i) => Object.assign({}, it, {
+        code: `${it.code}-${i}`,
+        name: `${it.name}-${i}`
+    })).forEach(data => targetService({ url: '/contract', method: 'post', data }));
 }
 
 module.exports = async () => {
-    // dicts = await api.dicts();
     api.dicts().then(allDicts => {
-        console.log(allDicts['DICT_PERSONNEL_TYPE'])
         dicts = allDicts;
 
         const template = {
