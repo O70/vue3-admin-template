@@ -34,13 +34,14 @@ delete from base_dict where 1 = 1 order by level desc;
 .Build
 [,bash]
 ----
+./gradlew clean bootJar
 docker build -t dmmp/service-pedestal .
 ----
 
 .Deploy
 [,bash]
 ----
-docker run -d --name dmpp-pedestal -p 9717:9717 dmmp/service-pedestal
+docker run -d --name dmpp-pedestal -p 9717:9717 -e "DMPP_DATASOURCE_HOST=SERVER_IP" dmmp/service-pedestal
 ----
 
 == Initialization Data
