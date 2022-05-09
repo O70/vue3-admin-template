@@ -2,9 +2,14 @@
 
 == Step
 
-== Step 1
+=== Build and Deploy
 
-== 创建数据库
+[,bash]
+----
+docker build .
+----
+
+=== Create Database and init data
 
 [,sql]
 ----

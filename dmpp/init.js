@@ -1,8 +1,9 @@
-const dict = require('./modules/dict');
-const org = require('./modules/org');
-const pedestal = require('./modules/pedestal');
+const modules = {
+    dict: require('./modules/dict'),
+    org: require('./modules/org'),
+    pedestal: require('./modules/pedestal')
+}
 
-dict();
-// org();
-
-setTimeout(pedestal, 10000);
+const [arg] = process.argv.slice(2);
+const m = modules[arg];
+m && m();

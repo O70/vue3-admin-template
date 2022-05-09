@@ -10,7 +10,7 @@ function add(data) {
 }
 
 let count = 1;
-const addChildren = (parent, children, log) => {
+const addChildren = async (parent, children, log) => {
     children.forEach(async ({ label: name, code, children }, ind) => {
         count++;
         log && console.log(`${count}`.padStart(2, ' '), { name, code });
