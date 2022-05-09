@@ -1,35 +1,21 @@
 = DMPP Initial Data
 
-== Step
+== Create Database
 
-=== Build and Deploy
-
-[,bash]
-----
-docker build .
-----
-
-=== Create Database and init data
-
+.Create
 [,sql]
 ----
 drop database if exists dmpp_pedestal;
 create database dmpp_pedestal character set utf8;
 ----
 
-.Dict
-[,sql]
-----
-delete from base_dict where 1 = 1 order by level desc;
-----
-
-.Citizen
+.Clean
 [,sql]
 ----
 insert into pedestal_citizen(id, name, mobile, deleted) values (uuid(), '鬼王', '13677889091', false);
 
-select *from base_dict order by level;
-select *from pedestal_citizen order by sort;
+select * from base_dict order by level;
+select * from pedestal_citizen order by sort;
 select * from pedestal_car_plate;
 select * from pedestal_worker;
 select * from pedestal_family;
@@ -41,4 +27,32 @@ delete from pedestal_worker where 1 = 1;
 delete from pedestal_car_plate where 1 = 1;
 delete from pedestal_citizen where 1 = 1;
 delete from base_dict where 1 = 1 order by level desc;
+----
+
+== Build and Deploy
+
+.Build
+[,bash]
+----
+docker build -t dmmp/service-pedestal .
+----
+
+.Deploy
+[,bash]
+----
+docker run -d --name dmpp-pedestal -p 9717:9717 dmmp/service-pedestal
+----
+
+== Initialization Data
+
+.Dict
+[,bash]
+----
+node init.js dict
+----
+
+.Pedestal
+[,bash]
+----
+node init.js pedestal
 ----
