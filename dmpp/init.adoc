@@ -41,7 +41,7 @@ docker build -t dmmp/service-pedestal .
 .Deploy
 [,bash]
 ----
-docker run -d --name dmpp-pedestal -p 9717:9717 -e "DMPP_DATASOURCE_HOST=SERVER_IP" dmmp/service-pedestal
+docker run -d --name dmpp-pedestal -p 9717:9717 -e "DMPP_DATASOURCE_HOST=SERVER_IP" -e "MINIO_URL=http://SERVER_IP:PORT" dmmp/service-pedestal
 ----
 
 == Initialization Data
