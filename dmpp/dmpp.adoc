@@ -23,6 +23,8 @@
 - [x] 国籍
 - [x] 民族
 - [x] 业务类型
+- [ ] Worker: username
+- [ ] Org: shortName
 
 - [ ] 数据初始化
 - [ ] 项目构建 - Docker(F/B)
@@ -58,7 +60,7 @@ Adapter
 - [ ] **modules** refactored into microservices: modular / entity /service / repository
 - [x] remove `thraex.supplier.mock-prefix`
 - [ ] Optimization `@EnableGeneric` annotations, add `boolean genericRouterFunction() default true;`
-- [ ] Refactor databases table name
+- [x] Refactor databases table name
 - [ ] Refactor **Tests**, change MySQL to H2. Optimization performance
 - [ ] Optimization security / token
 - [ ] Remove `Avatar`
