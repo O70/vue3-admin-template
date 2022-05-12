@@ -23,8 +23,8 @@
 - [x] 国籍
 - [x] 民族
 - [x] 业务类型
-- [ ] Worker: username
-- [ ] Org: shortName
+- [x] Worker: username
+- [x] Org: shortName
 
 - [ ] 数据初始化
 - [ ] 项目构建 - Docker(F/B)
