@@ -600,6 +600,32 @@
    }
   ]
  },
+ {
+    "name": "办公地址",
+    "code": "DICT_WORK_ADDRESS",
+    "children": [
+        {
+            "name": "北京院",
+            "code": "DICT_WORK_ADDRESS_BJ",
+            "children": []
+        },
+        {
+            "name": "廊坊分院",
+            "code": "DICT_WORK_ADDRESS_LF",
+            "children": []
+        },
+        {
+            "name": "西北院",
+            "code": "DICT_WORK_ADDRESS_XB",
+            "children": []
+        },
+        {
+            "name": "杭州院",
+            "code": "DICT_WORK_ADDRESS_HZ",
+            "children": []
+        }
+    ] 
+},
 {
   "label": "职级",
   "code": "DICT_RANK",
