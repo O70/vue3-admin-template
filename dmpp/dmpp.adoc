@@ -8,6 +8,9 @@
 == Important
 
 - [ ] ✨Login
+  * [ ] Send verification code
+  * [ ] Refactor login method
+  * [ ] Mobile token
 - [x] Avatar
 - [x] Profiles修改
 - [x] 修改字段可配置
@@ -59,7 +62,8 @@ Adapter
 - [ ] Fix method `org.thraex.toolkit.model.AbstractTree#toTree`
 - [ ] **modules** refactored into microservices: modular / entity /service / repository
 - [x] remove `thraex.supplier.mock-prefix`
-- [ ] Optimization `@EnableGeneric` annotations, add `boolean genericRouterFunction() default true;`
+- [ ] Optimization `@EnableGeneric` annotations, add `boolean genericRouterFunction() default true;` / `boolean enableWebFluxSecurity() default false;`
+- [ ] Optimization `EnableGenericSecurity`: move to `@EnableGeneric`
 - [x] Refactor databases table name
 - [ ] Refactor **Tests**, change MySQL to H2. Optimization performance
 - [ ] Optimization security / token
