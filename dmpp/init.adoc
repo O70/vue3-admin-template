@@ -72,3 +72,41 @@ node init.js pedestal
 
 ./gradlew :service-pedestal:test --tests "org.thraex.dmpp.mock.MockTests$MockPrepareTests.mockDict"
 ----
+
+== Nginx
+
+link:https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container[How do I assign a port mapping to an existing Docker container?]
+
+link:https://www.baeldung.com/linux/assign-port-docker-container[Assigning a Port Mapping to a Running Docker Container]
+
+* Stop container and docker service
+[,bash]
+----
+docker stop c-nginx
+sudo systemctl stop docker
+----
+
+* Get full docker container ID: ``docker inspect --format="{{.Id}}" c-nginx``
+
+* modify ``sudo vim /var/lib/docker/containers/38b3a4ef17d649f49f56a536a793633241ae2844d8336368e0eedf9a5a40a0de/hostconfig.json``, add ``,"9717/tcp":[{"HostIp":"","HostPort":"9717"}]`` at PortBindings
+
+* Modify ``sudo vim /var/lib/docker/containers/38b3a4ef17d649f49f56a536a793633241ae2844d8336368e0eedf9a5a40a0de/config.v2.json
+``, add ``,"9717/tcp":{}`` at ExposedPorts
+
+* Start docker service and container
+[,bash]
+----
+sudo systemctl start docker
+docker start c-nginx
+----
+
+=== Other
+
+link:https://docs.docker.com/config/daemon/systemd/[Control Docker with systemd]
+
+* Flush changes and restart Docker
+[,bash]
+----
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart docker
+----
