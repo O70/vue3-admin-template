@@ -10,7 +10,7 @@
 - [ ] ✨Login
   * [ ] Send verification code
   * [ ] Refactor login method
-  * [ ] Mobile token
+  * [ ] Mobile authenticate
 - [x] Avatar
 - [x] Profiles修改
 - [x] 修改字段可配置

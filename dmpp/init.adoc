@@ -35,7 +35,7 @@ delete from base_dict where 1 = 1 order by level desc;
 [,bash]
 ----
 ./gradlew clean bootJar
-docker build -t dmmp/service-pedestal .
+docker build -t dmpp/service-pedestal .
 ----
 
 .Deploy
@@ -56,4 +56,19 @@ node init.js dict
 [,bash]
 ----
 node init.js pedestal
+----
+
+== Mock Tests
+
+[,bash]
+----
+./gradlew help --task test
+
+--tests     Sets test class or method name to be included, '*' is supported.
+
+./gradlew :service-pedestal:test --tests "org.thraex.dmpp.mock.MockTests"
+
+./gradlew :service-pedestal:test --tests "org.thraex.dmpp.mock.MockTests" --info
+
+./gradlew :service-pedestal:test --tests "org.thraex.dmpp.mock.MockTests$MockPrepareTests.mockDict"
 ----
