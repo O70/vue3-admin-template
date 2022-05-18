@@ -602,26 +602,26 @@
  },
  {
     "name": "办公地址",
-    "code": "DICT_WORK_ADDRESS",
+    "code": "DICT_WORK_LOCATION",
     "children": [
         {
             "name": "北京院",
-            "code": "DICT_WORK_ADDRESS_BJ",
+            "code": "DICT_WORK_LOCATION_BJ",
             "children": []
         },
         {
             "name": "廊坊分院",
-            "code": "DICT_WORK_ADDRESS_LF",
+            "code": "DICT_WORK_LOCATION_LF",
             "children": []
         },
         {
             "name": "西北院",
-            "code": "DICT_WORK_ADDRESS_XB",
+            "code": "DICT_WORK_LOCATION_XB",
             "children": []
         },
         {
             "name": "杭州院",
-            "code": "DICT_WORK_ADDRESS_HZ",
+            "code": "DICT_WORK_LOCATION_HZ",
             "children": []
         }
     ] 

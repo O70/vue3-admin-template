@@ -57,7 +57,7 @@ $ git apply <PATCH_NAME>
 $ git remote add networking ssh://<USERNAME>@<IP>:<PORT>:/path_to/application-ui.git
 ```
 
-- 之后在`B`机器中的`application-ui`这个仓库下所有的操作懂跟之前一样正常进行，除了`pull`与`push`:
+- 之后在`B`机器中的`application-ui`这个仓库下所有的操作都跟之前一样正常进行，除了`pull`与`push`:
 ```sh
 $ git pull networking <BRANCH_NAME>
 $ git push networking <BRANCH_NAME>
