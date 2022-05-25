@@ -28,7 +28,8 @@
 - [x] 业务类型
 - [x] Worker: username
 - [x] Org: shortName
-- [ ] Worker: 百分比统计减册原因如何计算
+- [x] Worker: 百分比统计减册原因如何计算
+- [ ] Org: name history patch
 
 - [ ] 数据初始化
 - [ ] 项目构建 - Docker(F/B)

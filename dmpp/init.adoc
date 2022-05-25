@@ -110,3 +110,18 @@ link:https://docs.docker.com/config/daemon/systemd/[Control Docker with systemd]
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart docker
 ----
+== Export and Import Databases
+
+=== Run MySQL
+
+[,bash]
+----
+$ docker run -d \
+  --name c-mysql-prod \
+  -p 3307:3306 \
+  -v $PWD/Dockers/mysql-prod/conf:/etc/mysql/conf.d \
+  -v $PWD/Dockers/mysql-prod/data:/var/lib/mysql \
+  -v $PWD/Dockers/mysql-prod/logs: /log \
+  -e MYSQL_ROOT_PASSWORD=hanzo \
+  mysql:5.7
+----
