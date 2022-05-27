@@ -30,6 +30,7 @@
 - [x] Org: shortName
 - [x] Worker: 百分比统计减册原因如何计算
 - [ ] Org: name history patch
+- [ ] Gang: gangBranch String => Org
 
 - [ ] 数据初始化
   * [ ] Opt: proportion/reset
@@ -41,32 +42,46 @@
 - [ ] 下周一第一版测试
 
 === Data init
-  * [x] 基本信息
-  * [x] 家庭信息
-  * [x] 工作信息
-  ** [x] 工作信息
-  ** [x] 合同信息  
-  * [x] 履历信息 
-  ** [x] 教育经历 
-  ** [x] 工作经历  
-  ** [x] 职务信息  
-  ** [x] 职称信息
-  * [ ] 党务信息: 模拟许数据： DICT_POLITICAL_FACE_DY | 2020-01-01 | 信息技术中心党支部(ORG_ALL_A42) | DICT_GANG_TITLE_DZBQNWY
-  * [ ] 培训经历： 需要加年度查询条件
-  * [ ] 科研项目: 数据来源未知
-  * [x] 知识产权
-  ** [x] 中国专利
-  ** [x] 国外专利
-  ** [x] 软件著作权
-  ** [x] 技术秘密
-  ** [x] 论文著作
-  ** [x] 技术标准
-  * [ ] 奖励信息
-  ** [x] 科研奖励
-  ** [ ] 党内奖励
-  ** [x] 荣誉称号
-  * [ ] 学术活动: 无数据来源
-  * [x] 自我评定: 无数据来源,对应题目已模拟
+
+* [x] 基本信息
+* [x] 家庭信息
+* [x] 工作信息
+** [x] 工作信息
+** [x] 合同信息  
+* [x] 履历信息 
+** [x] 教育经历 
+** [x] 工作经历  
+** [x] 职务信息  
+** [x] 职称信息
+* [ ] 党务信息: 模拟许数据： DICT_POLITICAL_FACE_DY | 2020-01-01 | 信息技术中心党支部(ORG_ALL_A42) | DICT_GANG_TITLE_DZBQNWY
+* [ ] 培训经历： 需要加年度查询条件
+* [ ] 科研项目: 数据来源未知
+* [x] 知识产权
+** [x] 中国专利
+** [x] 国外专利
+** [x] 软件著作权
+** [x] 技术秘密
+** [x] 论文著作
+** [x] 技术标准
+* [ ] 奖励信息
+** [x] 科研奖励
+** [ ] 党内奖励
+** [x] 荣誉称号
+* [ ] 学术活动: 无数据来源
+* [x] 自我评定: 无数据来源,对应题目已模拟
+
+_Question
+*  [ ] 职务职称数据重导
+*  [ ] 学历学位处理
+*  [ ] 职级之类的字典校对
+
+init flow
+
+* 0. dmpp.datasource.database / dmpp.datasource.host / spring.datasource.password
+* 1. InitializationPedestal: remove ``@Disabled``
+* 2. spring.jpa.hibernate.ddl-auto=update
+* 3. init excel
+* 4. InitializationOther
 
 == Docs
 
