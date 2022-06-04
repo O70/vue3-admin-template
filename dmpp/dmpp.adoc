@@ -7,39 +7,39 @@
 
 == Important
 
-- [ ] ✨Login
-  * [ ] Send verification code
-  * [ ] Refactor login method
-  * [ ] Mobile authenticate
-- [x] Avatar
-- [x] Profiles修改
-- [x] 修改字段可配置
-- [x] 质疑修改(工单)
-- [x] 获取百分比
-- [x] ✅后台手动百分比计算(AOP暂延)
-- [x] ❌ Deprecated: AOP计算百分比，后台无操作
-- [x] ❌ Dicts API
-- [x] Databases schema name
-- [ ] Auditor
-- [ ] Security...
+* [ ] ✨Login
+** [ ] Send verification code
+** [ ] Refactor login method
+** [ ] Mobile authenticate
+* [x] Avatar
+* [x] Profiles修改
+* [x] 修改字段可配置
+* [x] 质疑修改(工单)
+* [x] 获取百分比
+* [x] ✅后台手动百分比计算(AOP暂延)
+* [x] ❌ Deprecated: AOP计算百分比，后台无操作
+* [x] ❌ Dicts API
+* [x] Databases schema name
+* [ ] Auditor
+* [ ] Security...
 
-- [x] 国籍
-- [x] 民族
-- [x] 业务类型
-- [x] Worker: username
-- [x] Org: shortName
-- [x] Worker: 百分比统计减册原因如何计算
-- [ ] Org: name history patch
-- [ ] Gang: gangBranch String => Org
+* [x] 国籍
+* [x] 民族
+* [x] 业务类型
+* [x] Worker: username
+* [x] Org: shortName
+* [x] Worker: 百分比统计减册原因如何计算
+* [ ] Org: name history patch
+* [ ] Gang: gangBranch String => Org
 
-- [ ] 数据初始化
-  * [ ] Opt: proportion/reset
-  * [ ] Topic
-  * [ ] 工作经历未找到
-- [ ] 项目构建 - Docker(F/B)
-- [ ] 测试
+* [ ] 数据初始化
+** [ ] Opt: proportion/reset
+** [ ] Topic
+** [ ] 工作经历未找到
+* [ ] 项目构建 - Docker(F/B)
+* [ ] 测试
 
-- [ ] 下周一第一版测试
+* [ ] 下周一第一版测试
 
 === Data init
 
@@ -70,7 +70,8 @@
 * [ ] 学术活动: 无数据来源
 * [x] 自我评定: 无数据来源,对应题目已模拟
 
-_Question
+=== Init Question
+
 * [x] 职务职称数据重导
 * [x] 学历学位处理
 * [x] 职级之类的字典校对
@@ -79,10 +80,19 @@ _Question
 * [x] PaperExcelTests 太慢 15min53sec
 * [x] 党务信息两个表人员不对应的筛选出来
 * [ ] 百分比初始化优化，API按id初始化，test一次性查询再做转换
-* [ ] Gang: 转正时间是否展示？如果不展示百分比是否将此字段纳入计算范围内
-* [ ] Gang: 党组织未找到-> org party
-* [ ] 奖励信息百分比，有三个表格，计算方式应该分成三份，若其中一个表格有至少1条数据便为1，最终1/3
-* [ ] 初始化产生的excel村到项目根目录中的临时文件夹
+* [x] Gang: 转正时间是否展示？如果不展示百分比是否将此字段纳入计算范围内
+* [x] Gang: 党组织未找到-> org party
+* [x] 奖励信息百分比，有三个表格，计算方式应该分成三份，若其中一个表格有至少1条数据便为1，最终1/3
+* [ ] 初始化产生的excel输出至``build/init-excels``
+* [ ] 基本信息：工作信息 === 1:n 
+* [ ] Train: 数据来源清洗
+* [x] Family: 映射找不到就用其他。关系字典等待重构
+* [ ] Gang: 个人党内奖励，集团不用管
+* [ ] Gang: 当前党内职务历史也需要作为历史职务
+* [ ] Gang: 当前党内职务修改后是否会增加历史记录
+* [ ] 知识产权，类似全部作者或科研项目的成员需要存起来
+* [ ] Contract: 根据开始时间和结束时间计算合同类型，必需两个时间存在
+* [ ] 武处专利数量对不上
 
 === Initialization Flow
 
