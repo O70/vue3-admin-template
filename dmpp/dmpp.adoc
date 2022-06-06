@@ -21,6 +21,7 @@
 * [x] ❌ Dicts API
 * [x] Databases schema name
 * [ ] Auditor
+* [ ] Token Audience
 * [ ] Security...
 
 * [x] 国籍
@@ -93,6 +94,14 @@
 * [ ] 知识产权，类似全部作者或科研项目的成员需要存起来
 * [ ] Contract: 根据开始时间和结束时间计算合同类型，必需两个时间存在
 * [ ] 武处专利数量对不上
+
+==== Final Question
+
+* [ ] Train: data
+* [ ] Dict mappings
+* [ ] Deploy prod
+
+454d4c3b78c445718e89f1717bbbf8c1
 
 === Initialization Flow
 

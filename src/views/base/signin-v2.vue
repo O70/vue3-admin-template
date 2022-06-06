@@ -10,12 +10,20 @@ const route = useRoute();
 const store = useStore();
 
 // const form = reactive({ username: '13677889091', password: '111111' });
-const form = reactive({ username: '13312345678', password: '111111' });
+const form = reactive({ username: '13911467496', password: '111111' });
+const form1 = reactive({ username: '13911467496', code: '700000' });
+const form11 = reactive({ username: '13911467496', code: '700003' });
+const form12 = reactive({ username: '13677889091', code: '700001' });
+const form2 = reactive({ username: '13911467496', password: '111111', code: '700001' });
 const loading = ref(false);
 
 function handleLogin() {
     loading.value = true;
-    console.log(encryption(form).replaceAll('Bearer ', ''));
+    // console.log(encryption(form).replaceAll('Bearer ', ''));
+    // console.log(encryption(form1).replaceAll('Bearer ', ''));
+    // console.log(encryption(form11).replaceAll('Bearer ', ''));
+    // console.log(encryption(form2).replaceAll('Bearer ', ''));
+    console.log(encryption(form12));
     store.dispatch('user/signin', encryption(form))
         // .then(() => router.push(route.query.redirect ?? '/'))
         .then(() => console.log('redirect...'))
