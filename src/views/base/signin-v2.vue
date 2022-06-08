@@ -4,17 +4,18 @@ import { useRouter, useRoute } from 'vue-router';
 import { useStore } from 'vuex';
 import { User, Lock } from '@element-plus/icons-vue';
 import encryption from '@/utils/encryption';
+import { sendCode } from '@/api/user';
 
 const router = useRouter();
 const route = useRoute();
 const store = useStore();
 
 // const form = reactive({ username: '13677889091', password: '111111' });
-const form = reactive({ username: '13911467496', password: '111111' });
-const form1 = reactive({ username: '13911467496', code: '700000' });
-const form11 = reactive({ username: '13911467496', code: '700003' });
-const form12 = reactive({ username: '13677889091', code: '700001' });
-const form2 = reactive({ username: '13911467496', password: '111111', code: '700001' });
+const form = reactive({ username: '13911467496', code: '' });
+// const form1 = reactive({ username: '13911467496', code: '700000' });
+// const form11 = reactive({ username: '13911467496', code: '700003' });
+// const form12 = reactive({ username: '13677889091', code: '700001' });
+// const form2 = reactive({ username: '13911467496', password: '111111', code: '700001' });
 const loading = ref(false);
 
 function handleLogin() {
@@ -23,12 +24,19 @@ function handleLogin() {
     // console.log(encryption(form1).replaceAll('Bearer ', ''));
     // console.log(encryption(form11).replaceAll('Bearer ', ''));
     // console.log(encryption(form2).replaceAll('Bearer ', ''));
-    console.log(encryption(form12));
+    console.log(encryption(form));
     store.dispatch('user/signin', encryption(form))
         // .then(() => router.push(route.query.redirect ?? '/'))
         .then(() => console.log('redirect...'))
         .catch(error => console.error('Signin error:', error))
         .finally(() => (loading.value = false));
+}
+
+function handleSend() {
+    sendCode({
+        mobile: form.username,
+        method: 'IM'
+    }).then(res => console.log('Send code:', res));
 }
 </script>
 
@@ -56,18 +64,27 @@ function handleLogin() {
                     />
                 </el-form-item>
 
-                <el-form-item prop="password">
+                <el-form-item prop="code">
                     <el-input
-                        v-model="form.password"
-                        type="password"
-                        placeholder="Password"
-                        name="password"
+                        v-model="form.code"
+                        type="text"
+                        placeholder="Code"
+                        name="code"
                         tabindex="2"
                         auto-complete="on"
                         :prefix-icon="Lock"
                     />
                 </el-form-item>
 
+                <el-button
+                    type="primary"
+                    style="width:100%;"
+                    color="#373835"
+                    :loading="loading"
+                    @click="handleSend"
+                >
+                    Send
+                </el-button>
                 <el-button
                     type="primary"
                     style="width:100%;"

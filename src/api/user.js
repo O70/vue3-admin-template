@@ -18,6 +18,14 @@ export async function signinV1(data) {
     });
 }
 
+export function sendCode(data) {
+    return request({
+        url: '/api/admin/verification/code/send',
+        method: 'POST',
+        data
+    });
+}
+
 export async function info() {
     /* return request({
         url: '/api/admin/user',

@@ -125,3 +125,10 @@ $ docker run -d \
   -e MYSQL_ROOT_PASSWORD=hanzo \
   mysql:5.7
 ----
+
+== Redis
+
+[,bash]
+----
+$ docker run -d --name c-redis -p 6379:6379 redis:latest --requirepass hanzo
+----

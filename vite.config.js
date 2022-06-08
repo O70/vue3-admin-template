@@ -27,8 +27,7 @@ export default defineConfig({
         proxy: {
             '/api/admin': {
                 // target: 'http://localhost:8037',
-                // target: 'http://localhost:9717',
-                target: 'http://10.122.163.108:9717',
+                target: 'http://localhost:9717',
                 changeOrigin: true,
                 rewrite: p => {
                     console.log(p.replace(/\/api\/admin/g, ''));

@@ -29,7 +29,7 @@ instance.interceptors.response.use(
     response => {
         const { data = {}} = response;
 
-        if (data.code !== 200) {
+        if (![200, 20000].includes(data.code)) {
             errorMessage(`${data.code}: ${data.message}`);
         } else {
             const { messages = {}} = response.config;
