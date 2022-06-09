@@ -71,6 +71,13 @@ node init.js pedestal
 ./gradlew :service-pedestal:test --tests "org.thraex.dmpp.mock.MockTests" --info
 
 ./gradlew :service-pedestal:test --tests "org.thraex.dmpp.mock.MockTests$MockPrepareTests.mockDict"
+
+./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.Initialization*'
+
+./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationPedestal'
+./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationExcel'
+./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationAvatar'
+./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationOther'
 ----
 
 == Nginx
