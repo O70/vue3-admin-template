@@ -74,13 +74,36 @@ node init.js pedestal
 
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.Initialization*'
 
+service-pedestal/src/test/java/org/thraex/dmpp/AbstractTests.java
+service-pedestal/src/test/java/org/thraex/dmpp/initialization/InitializationAvatar.java
+service-pedestal/src/test/java/org/thraex/dmpp/initialization/InitializationExcel.java
+service-pedestal/src/test/java/org/thraex/dmpp/initialization/InitializationOther.java
+service-pedestal/src/test/java/org/thraex/dmpp/initialization/InitializationPedestal.java
+
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationPedestal'
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationExcel'
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationAvatar'
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationOther'
 ----
 
+API:
+* ``/api/security/**``
+* ``/api/pedestal/**``
+* ``/api/fs/**``
+* ``/api/message/**``
+* ``/api/supplier/**``
+
 == Nginx
+
+[,bash]
+----
+$ docker run -d \
+  --name c-nginx \
+  -p 9710-9717:9710-9717 \
+  -v $PWD/Workspace/Dockers/nginx/conf.d:/etc/nginx/conf.d \
+  -v $PWD/Workspace/Dockers/nginx/html:/usr/share/nginx/html \
+  nginx:1.21.6
+----
 
 link:https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container[How do I assign a port mapping to an existing Docker container?]
 
