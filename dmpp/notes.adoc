@@ -12,6 +12,15 @@ docker pull --platform linux/amd64 mysql:5.7.38
 [,bash]
 ----
 docker run -d --name c-mysql -e MYSQL_ROOT_PASSWORD=hanzo -p 3307:3306 mysql:5.7.38
+
+docker run -d \
+  --name c-mysql \
+  -p 3306:3306 \
+  -v ~/Workspace/Dockers/mysql/conf/:/etc/mysql/conf.d/ \
+  -v ~/Workspace/Dockers/mysql/datas:/var/lib/mysql \
+  -v ~/Workspace/Dockers/mysql/logs:/log \
+  -e MYSQL_ROOT_PASSWORD=hanzo \
+  mysql:5.7.38
 ----
 
 == IDEA
