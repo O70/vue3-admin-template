@@ -147,11 +147,11 @@ $ sudo systemctl restart docker
 [,bash]
 ----
 $ docker run -d \
-  --name c-mysql-prod \
-  -p 3307:3306 \
+  --name c-mysql \
+  -p 3306:3306 \
   -v $PWD/Dockers/mysql-prod/conf:/etc/mysql/conf.d \
   -v $PWD/Dockers/mysql-prod/data:/var/lib/mysql \
-  -v $PWD/Dockers/mysql-prod/logs: /log \
+  -v $PWD/Dockers/mysql-prod/logs:/log \
   -e MYSQL_ROOT_PASSWORD=hanzo \
   mysql:5.7
 ----
