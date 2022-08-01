@@ -84,6 +84,7 @@ service-pedestal/src/test/java/org/thraex/dmpp/initialization/InitializationPede
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationExcel'
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationAvatar'
 ./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationOther'
+./gradlew :service-pedestal:test --tests 'org.thraex.dmpp.initialization.InitializationExperience'
 ----
 
 API:
